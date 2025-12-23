@@ -1,62 +1,382 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-      <meta charset="utf-8">
-      <title>Abraham Ajibade Website</title>
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link
-          href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-          rel="stylesheet"
-      >
-      <link rel="stylesheet" href="style.css">
-    </head>
-
-      <body>
-      <nav class="accordion-container">
-        <div class="main-item">
-        <div align="center">
-          <h1> Abraham Olakunle Ajibade </h1>
-
-          <h4 align="center"> Data Analyst | Data Scientist | Machine Learning Engineer </h4>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abraham Ajibade | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">AA</a>
+            <ul class="nav-menu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="Abraham Ajibade Resume 112025.pdf" class="nav-link resume-btn" target="_blank">Resume</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
+    </nav>
 
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="hero-greeting">Hello, I'm</p>
+            <h1 class="hero-name">Abraham Ajibade</h1>
+            <h2 class="hero-title">Machine Learning and AI Engineer</h2>
+            <p class="hero-description">
+                Passionate about deploying artificial intelligence and machine learning models for real-world impact.
+            </p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                <a href="Abraham Ajibade Resume 112025.pdf" class="btn btn-secondary" target="_blank">
+                    <i class="fas fa-file-alt"></i> View Resume
+                </a>
+            </div>
+            <div class="hero-social">
+                <a href="https://github.com/jibbs1703" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="mailto:abraham.ajibade@gmail.com" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
         </div>
-        <ul>
-            <li>
-              <div class="line-vertical"></div>
-              <div class="line-horizontal"></div>
-              <a href="#resume" title="Resume">
-                Resume
-              </a>
-            </li>
+        <div class="hero-visual">
+            <div class="code-window">
+                <div class="code-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="code-filename">me.py</span>
+                </div>
+                <pre class="code-content">
+<code><span class="variable">abraham</span> = {
+    <span class="string">"name"</span>: <span class="string">"Abraham Ajibade"</span>,
+    <span class="string">"role"</span>: <span class="string">"ML &amp; AI Engineer"</span>,
+    <span class="string">"fuel"</span>: <span class="string">"☕ + 🎵"</span>,
+    <span class="string">"currently"</span>: <span class="string">"Deploying models"</span>,
+    <span class="string">"motto"</span>: <span class="string">"Ship it, Optimize it!"</span>
+}
 
-            <li>
-              <div class="line-vertical"></div>
-              <div class="line-horizontal"></div>
-              <a href="#projects" title="Projects">
-                Projects
-              </a>
-            </li>
+<span class="keyword">while</span> <span class="variable">abraham</span>[<span class="string">"fuel"</span>]:
+    <span class="variable">build_cool_stuff</span>()
+            </div>
+        </div>
+    </section>
 
-            <li>
-              <div class="line-vertical"></div>
-              <div class="line-horizontal"></div>
-              <a href="#contact" title="Contact">
-                Contact
-              </a>
-            </li>
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Artificial intelligence and Machine Learning Engineer specializing in delivering end-to-end machine learning and
+                        artificial intelligence solutions, while following industry standard MLOps and LLMOps practices. Passionate 
+                        about creating and driving real-life impact through data. 
+                    </p>
+                    <p>
+                        I thrive at the intersection of development and deployment, building robust MLOps pipelines using industry 
+                        standard practices and contemporary tools across cloud platforms. Beyond the technical components, I am
+                        passionate about breaking down complex questions into simple solutions for stakeholders.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight">
+                            <i class="fas fa-brain"></i>
+                            <span>AI/ML Expertise</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-cloud"></i>
+                            <span>MLOps & Cloud</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-users"></i>
+                            <span>Strong Collaborator</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-code"></i>
+                            <span>Clean Code Advocate</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>Problem Solver</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-rocket"></i>
+                            <span>Continuous Learner</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            <li>
-              <div class="line-vertical"></div>
-              <div class="line-horizontal"></div>
-              <a href="#funfacts" title="Funfacts">
-                Fun Facts
-              </a>
-            </li>
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">Bash</span>
+                        <span class="skill-tag">HCL</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-brain"></i> Machine Learning</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">Scikit-Learn</span>
+                        <span class="skill-tag">XGBoost</span>
+                        <span class="skill-tag">PySpark MLlib</span>
+                        <span class="skill-tag">ONNX</span>
+                        <span class="skill-tag">Deep Learning</span>
+                        <span class="skill-tag">NLP</span>
+                        <span class="skill-tag">Computer Vision</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-robot"></i> Generative AI & LLMs</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">LangChain</span>
+                        <span class="skill-tag">LangGraph</span>
+                        <span class="skill-tag">Hugging Face</span>
+                        <span class="skill-tag">Retrieval Augmented Generation (RAG)</span>
+                        <span class="skill-tag">Vector Databases</span>
+                        <span class="skill-tag">Speech-to-Text</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-cogs"></i> MLOps & Deployment</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Terraform</span>
+                        <span class="skill-tag">MLflow</span>
+                        <span class="skill-tag">Triton Inference Server</span>
+                        <span class="skill-tag">AWS SageMaker</span>
+                        <span class="skill-tag">Azure ML</span>
+                        <span class="skill-tag">Arize AI</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-database"></i> Data Engineering</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Apache Spark</span>
+                        <span class="skill-tag">Databricks</span>
+                        <span class="skill-tag">AWS Glue</span>
+                        <span class="skill-tag">AWS EMR</span>
+                        <span class="skill-tag">Apache Airflow</span>
+                        <span class="skill-tag">ETL/ELT</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-server"></i> Backend & APIs</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">FastAPI</span>
+                        <span class="skill-tag">Pydantic</span>
+                        <span class="skill-tag">SQLAlchemy</span>
+                        <span class="skill-tag">SQLModel</span>
+                        <span class="skill-tag">OAuth</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-cloud"></i> Cloud Platforms and Infrastructure</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Azure</span>
+                        <span class="skill-tag">GCP</span>
+                        <span class="skill-tag">Terraform</span>
+                        <span class="skill-tag">Ansible</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-check-circle"></i> Dev Practices</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Continuous Integration</span>
+                        <span class="skill-tag">Continuous Deployment</span>
+                        <span class="skill-tag">Code Linting</span>
+                        <span class="skill-tag">Code Reviews</span>
+                        <span class="skill-tag">DevContainers</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Integration Testing</span>
+                        <span class="skill-tag">Unit Testing</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        </ul>
-      </nav>
-      <script src="script.js"></script>
-    </body>
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">Recent Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>HR Policy RAG Chatbot</h3>
+                        <ul class="project-bullets">
+                            <li>Privacy-first RAG chatbot for context-grounded HR policy answers</li>
+                            <li>Local LLM integration with self-hosted vector database</li>
+                            <li>Zero external API dependencies for data security</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>FastAPI</span>
+                            <span>Qdrant</span>
+                            <span>LangChain</span>
+                            <span>RAG</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/jibbs1703" class="project-link" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-hospital"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Healthcare Data Mart & ML Pipeline</h3>
+                        <ul class="project-bullets">
+                            <li>HIPAA-compliant data mart ingesting 30K records/batch</li>
+                            <li>Fault-tolerant architecture with &lt;2% failure rate</li>
+                            <li>Terraform & Azure DevOps CI/CD—95% fewer manual retries</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>Databricks</span>
+                            <span>Terraform</span>
+                            <span>Azure DevOps</span>
+                            <span>PySpark</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/jibbs1703" class="project-link" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-balance-scale"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Legal Archive AI Digitization</h3>
+                        <ul class="project-bullets">
+                            <li>Digitized 100K+ legal documents spanning 22 years</li>
+                            <li>RAG system with OCR, LegalBert & FAISS</li>
+                            <li>98% extraction accuracy, 70% faster case lookups</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>LegalBert</span>
+                            <span>FAISS</span>
+                            <span>OCR</span>
+                            <span>Llama</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/jibbs1703" class="project-link" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fab fa-github"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>GitHub Unfollower Agent</h3>
+                        <ul class="project-bullets">
+                            <li>AI agent interpreting natural language to manage GitHub connections</li>
+                            <li>Open-Source LLM inference via Ollama with Qdrant vector storage</li>
+                            <li>Deployed on AWS EC2 with Docker & Nginx reverse proxy</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>FastAPI</span>
+                            <span>LangChain</span>
+                            <span>Ollama</span>
+                            <span>Qdrant</span>
+                            <span>AWS EC2</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/jibbs1703/Github-Unfollower-Agent" class="project-link" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-cta">
+                <a href="https://github.com/jibbs1703" class="btn btn-secondary" target="_blank">
+                    <i class="fab fa-github"></i> View All Projects on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <p class="contact-text">
+                    I'm currently open to new opportunities and collaborations. 
+                    Whether you have a question, want to work together, or just want to say hi, 
+                    feel free to reach out!
+                </p>
+                <div class="contact-methods">
+                    <a href="mailto:abraham.ajibade@gmail.com" class="contact-method">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email Me</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/abraham-o-ajibade" target="_blank" class="contact-method">
+                        <i class="fab fa-linkedin-in"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/jibbs1703" target="_blank" class="contact-method">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+                <a href="Abraham Ajibade Resume 112025.pdf" class="btn btn-primary resume-download" target="_blank">
+                    <i class="fas fa-download"></i> Download Resume
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Abraham Ajibade. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="https://github.com/jibbs1703" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
