@@ -1,6 +1,11 @@
 # Abraham Ajibade | Personal Portfolio
 
-[![Website](https://img.shields.io/website?url=https%3A%2F%2Fjibbs1703.github.io)](https://jibbs1703.github.io)
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Google Fonts](https://img.shields.io/badge/Google_Fonts-4285F4?style=for-the-badge&logo=google-fonts&logoColor=white)
+![Font Awesome](https://img.shields.io/badge/Font_Awesome-528DD7?style=for-the-badge&logo=font-awesome&logoColor=white)
 
 A modern, responsive personal portfolio website showcasing my work as a Machine Learning & Artificial Intelligence Engineer.
 
@@ -8,7 +13,7 @@ A modern, responsive personal portfolio website showcasing my work as a Machine 
 
 ---
 
-## ✨ Features
+## Features
 
 - **Responsive Design** — Optimized for all devices (mobile, tablet, desktop)
 - **Dark Theme** — Modern, clean aesthetic with subtle purple accents
@@ -19,25 +24,16 @@ A modern, responsive personal portfolio website showcasing my work as a Machine 
 
 ---
 
-## 🛠️ Tech Stack
-
-- **HTML5** — Semantic markup
-- **CSS3** — Custom properties, Flexbox, Grid, animations
-- **JavaScript** — Smooth scrolling, mobile navigation, scroll animations
-- **Google Fonts** — Inter & JetBrains Mono
-- **Font Awesome** — Icon library
-
----
-
-## 📂 Project Structure
+## Project Structure
 
 ```
 jibbs1703.github.io/
-├── index.html          # Main HTML file
-├── styles.css          # All styling
-├── script.js           # JavaScript functionality
-├── README.md           # This file
-└── Abraham Ajibade Resume 112025.pdf  # Resume
+├── index.html
+├── styles.css
+├── script.js
+├── README.md
+└── documents/
+    └── Abraham Ajibade Resume 112025.pdf
 ```
 
 ---
