@@ -1,42 +1,64 @@
-const hamburger = document.querySelector('.hamburger');
-const navMenu = document.querySelector('.nav-menu');
-const navLinks = document.querySelectorAll('.nav-link');
+const themeToggle = document.getElementById('themeToggle');
+const themeToggleMobile = document.getElementById('themeToggleMobile');
+const themeIcon = document.getElementById('themeIcon');
+const themeIconMobile = document.getElementById('themeIconMobile');
+const html = document.documentElement;
 
-hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
-    navMenu.classList.toggle('active');
-});
+const savedTheme = localStorage.getItem('theme') || 'light';
+html.setAttribute('data-theme', savedTheme);
+updateThemeIcons(savedTheme);
 
-navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        hamburger.classList.remove('active');
-        navMenu.classList.remove('active');
+function updateThemeIcons(theme) {
+    const icons = [themeIcon, themeIconMobile];
+    icons.forEach(icon => {
+        if (icon) {
+            if (theme === 'dark') {
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+            } else {
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+            }
+        }
     });
-});
+}
 
-document.addEventListener('click', (e) => {
-    if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
-        hamburger.classList.remove('active');
-        navMenu.classList.remove('active');
-    }
-});
-
-const navbar = document.querySelector('.navbar');
-let lastScroll = 0;
-
-window.addEventListener('scroll', () => {
-    const currentScroll = window.pageYOffset;
+function toggleTheme() {
+    const currentTheme = html.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
     
-    if (currentScroll > 50) {
-        navbar.style.background = 'rgba(15, 23, 42, 0.95)';
-        navbar.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.3)';
-    } else {
-        navbar.style.background = 'rgba(15, 23, 42, 0.9)';
-        navbar.style.boxShadow = 'none';
-    }
-    
-    lastScroll = currentScroll;
-});
+    html.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+    updateThemeIcons(newTheme);
+}
+
+if (themeToggle) {
+    themeToggle.addEventListener('click', toggleTheme);
+}
+
+if (themeToggleMobile) {
+    themeToggleMobile.addEventListener('click', toggleTheme);
+}
+
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobileMenu');
+const mobileLinks = document.querySelectorAll('.mobile-link');
+
+if (hamburger && mobileMenu) {
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        mobileMenu.classList.toggle('active');
+        document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+    });
+
+    mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            mobileMenu.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+    });
+}
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -50,6 +72,49 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+const sidebarLinks = document.querySelectorAll('.sidebar-link');
+const sections = document.querySelectorAll('.section, .hero');
+
+function updateActiveLink() {
+    const scrollY = window.pageYOffset;
+    
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop - 150;
+        const sectionHeight = section.offsetHeight;
+        const sectionId = section.getAttribute('id');
+        
+        if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+            sidebarLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${sectionId}`) {
+                    link.classList.add('active');
+                }
+            });
+        }
+    });
+}
+
+window.addEventListener('scroll', updateActiveLink);
+
+const backToTopBtn = document.getElementById('backToTop');
+
+if (backToTopBtn) {
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 500) {
+            backToTopBtn.classList.add('visible');
+        } else {
+            backToTopBtn.classList.remove('visible');
+        }
+    });
+
+    backToTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+}
 
 const observerOptions = {
     threshold: 0.1,
@@ -65,56 +130,64 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-document.querySelectorAll('.skill-category, .project-card, .about-content, .contact-content').forEach(el => {
+document.querySelectorAll('.section, .project-item, .skill-group').forEach(el => {
     el.style.opacity = '0';
-    el.style.transform = 'translateY(30px)';
+    el.style.transform = 'translateY(20px)';
     el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
     observer.observe(el);
 });
 
-const sections = document.querySelectorAll('section[id]');
+console.log('%c👋 Hello, fellow developer!', 'font-size: 20px; font-weight: bold;');
+console.log('%cCheck out my GitHub: github.com/jibbs1703', 'font-size: 14px; color: #8b5cf6;');
 
-window.addEventListener('scroll', () => {
-    const scrollY = window.pageYOffset;
-    
-    sections.forEach(section => {
-        const sectionHeight = section.offsetHeight;
-        const sectionTop = section.offsetTop - 100;
-        const sectionId = section.getAttribute('id');
-        const navLink = document.querySelector(`.nav-link[href="#${sectionId}"]`);
-        
-        if (navLink && scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-            navLinks.forEach(link => link.classList.remove('active'));
-            navLink.classList.add('active');
-        }
-    });
-});
+const typingText = document.getElementById('typingText');
+const roles = [
+    'AI & Machine Learning Engineer',
+    'MLOps Specialist',
+    'LLM Application Developer',
+    'Data Engineer',
+    'Cloud Solutions Architect'
+];
 
-const codeContent = document.querySelector('.code-content code');
-if (codeContent) {
-    const originalHTML = codeContent.innerHTML;
+let roleIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+let typingSpeed = 100;
+
+function typeText() {
+    const currentRole = roles[roleIndex];
     
-    const codeWindow = document.querySelector('.code-window');
-    if (codeWindow) {
-        codeWindow.addEventListener('mouseenter', () => {
-            codeWindow.style.transform = 'scale(1.02)';
-            codeWindow.style.transition = 'transform 0.3s ease';
-        });
-        
-        codeWindow.addEventListener('mouseleave', () => {
-            codeWindow.style.transform = 'scale(1)';
-        });
+    if (isDeleting) {
+        typingText.textContent = currentRole.substring(0, charIndex - 1);
+        charIndex--;
+        typingSpeed = 50;
+    } else {
+        typingText.textContent = currentRole.substring(0, charIndex + 1);
+        charIndex++;
+        typingSpeed = 100;
     }
+    
+    if (!isDeleting && charIndex === currentRole.length) {
+        isDeleting = true;
+        typingSpeed = 2000;
+    } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        roleIndex = (roleIndex + 1) % roles.length;
+        typingSpeed = 500;
+    }
+    
+    setTimeout(typeText, typingSpeed);
 }
 
-window.addEventListener('scroll', () => {
-    const scrolled = window.pageYOffset;
-    const heroVisual = document.querySelector('.hero-visual');
-    
-    if (heroVisual && scrolled < window.innerHeight) {
-        heroVisual.style.transform = `translateY(${scrolled * 0.1}px)`;
-    }
-});
+if (typingText) {
+    setTimeout(typeText, 1000);
+}
 
-console.log('%c👋 Hello, developer!', 'font-size: 24px; font-weight: bold;');
-console.log('%cInterested in the code? Check out the GitHub repo!', 'font-size: 14px; color: #6366f1;');
+const projectItems = document.querySelectorAll('.project-item');
+projectItems.forEach((item, index) => {
+    item.style.animationDelay = `${index * 0.15}s`;
+});
+const skillGroups = document.querySelectorAll('.skill-group');
+skillGroups.forEach((group, index) => {
+    group.style.animationDelay = `${index * 0.1}s`;
+});
