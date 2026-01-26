@@ -142,11 +142,11 @@ console.log('%cCheck out my GitHub: github.com/jibbs1703', 'font-size: 14px; col
 
 const typingText = document.getElementById('typingText');
 const roles = [
-    'AI & Machine Learning Engineer',
-    'MLOps Specialist',
+    'Artificial Intelligence Engineer',
+    'Machine Learning Engineer',
+    'Machine Learning Operations Specialist',
     'LLM Application Developer',
     'Data Engineer',
-    'Cloud Solutions Architect'
 ];
 
 let roleIndex = 0;

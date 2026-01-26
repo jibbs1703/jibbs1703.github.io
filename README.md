@@ -9,7 +9,7 @@
 
 A modern, responsive personal portfolio website showcasing my work as a Machine Learning & Artificial Intelligence Engineer.
 
-🔗 **Live Site:** [jibbs1703.github.io](https://jibbs1703.github.io)
+🔗 **Live Site:** [abrahamajibade.com](https://abrahamajibade.com)
 
 ---
 
