@@ -40,7 +40,7 @@ jibbs1703.github.io/
 
 ## 📬 Contact
 
-- **Email:** abraham.ajibade@gmail.com
+- **Email:** abraham0ajibade@gmail.com
 - **LinkedIn:** [linkedin.com/in/abraham-o-ajibade](https://www.linkedin.com/in/abraham-o-ajibade)
 - **GitHub:** [github.com/jibbs1703](https://github.com/jibbs1703)
 
