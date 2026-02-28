@@ -3,398 +3,402 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abraham Ajibade | AI & ML Engineer</title>
+    <title>Abraham Ajibade | Portfolio Website</title>
     
-    <meta name="description" content="Abraham Ajibade - AI & Machine Learning Engineer specializing in MLOps, LLMs, and end-to-end ML solutions. Based in Chicago, Illinois.">
+    <meta name="description" content="Abraham Ajibade - Artificial Intelligence & Machine Learning Engineer specializing in MLOps, LLMs, and end-to-end ML solutions. Based in Chicago, Illinois.">
     <meta name="keywords" content="AI Engineer, Machine Learning, MLOps, LLM, Python, Deep Learning, Data Science">
     <meta name="author" content="Abraham Ajibade">
     
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://jibbs1703.github.io/">
-    <meta property="og:title" content="Abraham Ajibade | AI & ML Engineer">
-    <meta property="og:description" content="AI & Machine Learning Engineer specializing in MLOps, LLMs, and end-to-end ML solutions.">
+    <meta property="og:title" content="Abraham Ajibade | Artificial Intelligence Engineer | Machine Learning Engineer">
+    <meta property="og:description" content="Artificial Intelligence & Machine Learning Engineer specializing in MLOps, LLMs, and end-to-end ML solutions.">
     <meta property="og:image" content="https://jibbs1703.github.io/og-image.png">
     
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Abraham Ajibade | AI & ML Engineer">
-    <meta name="twitter:description" content="AI & Machine Learning Engineer specializing in MLOps, LLMs, and end-to-end ML solutions.">
+    <meta name="twitter:title" content="Abraham Ajibade | Artificial Intelligence Engineer | Machine Learning Engineer">
+    <meta name="twitter:description" content="Artificial Intelligence & Machine Learning Engineer specializing in MLOps, LLMs, and end-to-end ML solutions.">
     
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <aside class="sidebar">
-        <div class="sidebar-content">
-            <a href="#home" class="sidebar-logo">ABRAHAM AJIBADE</a>
-            <nav class="sidebar-nav">
-                <a href="#about" class="sidebar-link">About Me</a>
-                <a href="#experience" class="sidebar-link">Experience</a>
-                <a href="#education" class="sidebar-link">Education</a>
-                <a href="#projects" class="sidebar-link">Projects</a>
-                <a href="#skills" class="sidebar-link">Skills</a>
-                <a href="documents/Abraham Ajibade Resume 012026.pdf" class="sidebar-link" target="_blank">Resume</a>
+    <div class="container">
+        <header>
+            <div class="header-left"></div>
+            <button id="menu-toggle" class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+            <nav class="top-nav" aria-label="Main navigation">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#education">Education</a>
+                <a href="documents/Abraham Ajibade Resume 022026.pdf" target="_blank" class="resume-link">Resume</a>
             </nav>
-            <div class="sidebar-social">
+            <div class="header-right">
                 <a href="https://github.com/jibbs1703" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/abraham-o-ajibade" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="mailto:abraham.ajibade@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                <a href="mailto:abraham0ajibade@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                <button id="theme-toggle" class="theme-toggle fixed-theme-toggle" aria-label="Toggle theme">🌙</button>
             </div>
-            <div class="status-indicator">
-                <span class="status-dot"></span>
-                <span class="status-text">Available for opportunities</span>
-            </div>
-            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-                <i class="fas fa-moon" id="themeIcon"></i>
-            </button>
-        </div>
-    </aside>
+        </header>
 
-    <header class="mobile-header">
-        <a href="#home" class="mobile-logo">ABRAHAM AJIBADE</a>
-        <div class="mobile-actions">
-            <button class="theme-toggle-mobile" id="themeToggleMobile" aria-label="Toggle theme">
-                <i class="fas fa-moon" id="themeIconMobile"></i>
-            </button>
-            <button class="hamburger" id="hamburger" aria-label="Menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
-        </div>
-    </header>
+        <section id="about">
+            <h2>About</h2>
+            <div class="about-content">
+                <div class="about-photo-container">
+                    <img src="documents/Abraham Ajibade Photo.jpeg" alt="Abraham Ajibade — AI/ML Engineer" class="about-photo" loading="lazy" width="280" height="280">
+                </div>
+                <div class="about-text">
+                    <p class="lead">Artificial Intelligence &amp; Machine Learning Engineer specializing in MLOps, LLMs, and end-to-end ML solutions.</p>
+                    <p>I design and deploy production-ready ML systems, integrate large language models, and build reliable data platforms for scalable machine learning workflows.</p>
 
-    <div class="mobile-menu" id="mobileMenu">
-        <nav class="mobile-nav">
-            <a href="#about" class="mobile-link">About Me</a>
-            <a href="#experience" class="mobile-link">Experience</a>
-            <a href="#education" class="mobile-link">Education</a>
-            <a href="#projects" class="mobile-link">Projects</a>
-            <a href="#skills" class="mobile-link">Skills</a>
-            <a href="documents/Abraham Ajibade Resume 012026.pdf" class="mobile-link" target="_blank">Resume</a>
-        </nav>
-    </div>
-
-    <main class="main-content">
-        <section class="hero" id="home">
-            <div class="hero-text">
-                <h1 class="hero-name">ABRAHAM AJIBADE</h1>
-                <p class="hero-title">
-                    <span class="typing-text" id="typingText"></span>
-                    <span class="typing-cursor">|</span>
-                </p>
-            </div>
-            <div class="hero-image">
-                <img src="documents/Abraham Ajibade Photo.jpeg" alt="Abraham Ajibade" class="hero-photo">
-            </div>
-        </section>
-
-        <section class="section" id="about">
-            <h4 class="section-label">ABOUT ME</h4>
-            <div class="section-content">
-                <p class="about-text">
-                    I'm an Artificial Intelligence and Machine Learning Engineer specializing in delivering 
-                    end-to-end machine learning and AI solutions, while following industry standard MLOps 
-                    and LLMOps practices. Passionate about creating and driving real-life impact through data.
-                </p>
-                <p class="about-text">
-                    I thrive at the intersection of development and deployment, building robust MLOps pipelines 
-                    using industry standard practices and contemporary tools across cloud platforms. Beyond the 
-                    technical components, I am passionate about breaking down complex questions into simple 
-                    solutions for stakeholders.
-                </p>
-            </div>
-        </section>
-
-        <section class="section" id="experience">
-            <h2 class="section-heading">PROFESSIONAL EXPERIENCE</h2>            
-            <div class="experience-card">
-                <div class="experience-timeline">
-                    <span class="timeline-date">Dec 2024 to Present</span>
-                    <div class="timeline-logo">
-                        <i class="fas fa-hospital"></i>
+                    <div class="role-row" aria-hidden="false">
+                        <span class="role-badge"><i class="fas fa-robot" aria-hidden="true"></i> AI Engineer</span>
+                        <span class="role-badge"><i class="fas fa-brain" aria-hidden="true"></i> ML Engineer</span>
+                        <span class="role-badge"><i class="fas fa-database" aria-hidden="true"></i> Data Engineer</span>
+                        <span class="role-location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Chicago, IL</span>
                     </div>
                 </div>
-                <div class="experience-content">
-                    <div class="experience-header">
-                        <h3 class="experience-role">Machine Learning Engineer</h3>
-                        <span class="experience-company"><i class="fas fa-building"></i> Northwestern Medicine • Chicago, IL</span>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                    <div class="skill-group">
+                        <h4><i class="fas fa-brain"></i> Machine Learning</h4>
+                        <div class="skill-list" data-collapsible>
+                            <span class="skill-badge">PyTorch</span>
+                            <span class="skill-badge">Scikit-Learn</span>
+                            <span class="skill-badge">XGBoost</span>
+                            <span class="skill-badge">PySpark MLlib</span>
+                            <span class="skill-badge">ONNX</span>
+                            <span class="skill-badge">Deep Learning</span>
+                            <span class="skill-badge">NLP</span>
+                            <span class="skill-badge">Computer Vision</span>
+                        </div>
+                        <button class="skills-toggle" aria-expanded="false">Show more</button>
                     </div>
-                    <ul class="experience-details">
-                        <li>Deployed a high-throughput incident classification system by containerizing a fine-tuned Mixtral 7x8B model via Triton Inference Server on Azure, eliminating 70%+ manual review workload.</li>
-                        <li>Established department-wide model deployment framework using ONNX + Triton, resolving cross-backend compatibility for 4+ model families, reducing deployment time by 25%.</li>
-                        <li>Spearheaded DevSecOps transformation within Azure DevOps, integrating security automation that remediated 150+ critical vulnerabilities pre-production.</li>
-                        <li>Engineered scalable data orchestration layer on Databricks (PySpark/SQL), automating HIPAA-compliant storage and enabling real-time model feedback loops.</li>
-                        <li>Productionized medical document summarization microservice with LLMs and Pydantic AI for automated PII redaction and 6th-grade readability conversion.</li>
-                        <li>Optimized feature engineering pipelines with parallel PySpark workflows, slashing feature generation latency by 92%.</li>
-                    </ul>
-                    <div class="experience-tags">
-                        <span>Triton</span>
-                        <span>ONNX</span>
-                        <span>Azure VMSS</span>
+                    <div class="skill-group">
+                        <h4><i class="fas fa-robot"></i> Generative AI</h4>
+                        <div class="skill-list" data-collapsible>
+                            <span class="skill-badge">Large Language Models</span>
+                            <span class="skill-badge">LangChain</span>
+                            <span class="skill-badge">LangGraph</span>
+                            <span class="skill-badge">Prompt Engineering</span>
+                            <span class="skill-badge">RAG</span>
+                            <span class="skill-badge">Vector Databases</span>
+                            <span class="skill-badge">MCP</span>
+                        </div>
+                        <button class="skills-toggle" aria-expanded="false">Show more</button>
+                    </div>
+                    <div class="skill-group">
+                        <h4><i class="fas fa-cogs"></i> MLOps & Platforms</h4>
+                        <div class="skill-list" data-collapsible>
+                            <span class="skill-badge">Docker</span>
+                            <span class="skill-badge">Terraform</span>
+                            <span class="skill-badge">MLflow</span>
+                            <span class="skill-badge">Triton</span>
+                            <span class="skill-badge">AWS SageMaker</span>
+                            <span class="skill-badge">Azure ML</span>
+                            <span class="skill-badge">Databricks</span>
+                        </div>
+                        <button class="skills-toggle" aria-expanded="false">Show more</button>
+                    </div>
+                    <div class="skill-group">
+                        <h4><i class="fas fa-database"></i> Data Engineering</h4>
+                        <div class="skill-list" data-collapsible>
+                            <span class="skill-badge">Polars</span>
+                            <span class="skill-badge">Pandas</span>
+                            <span class="skill-badge">Apache Spark</span>
+                            <span class="skill-badge">Airflow</span>
+                            <span class="skill-badge">ETL/ELT</span>
+                            <span class="skill-badge">SQL</span>
+                        </div>
+                        <button class="skills-toggle" aria-expanded="false">Show more</button>
+                    </div>
+                    <div class="skill-group">
+                        <h4><i class="fas fa-code-branch"></i> CI/CD</h4>
+                        <div class="skill-list" data-collapsible>
+                            <span class="skill-badge">Azure DevOps</span>
+                            <span class="skill-badge">GitHub Actions</span>
+                            <span class="skill-badge">Jenkins</span>
+                            <span class="skill-badge">Drone CI</span>
+                            <span class="skill-badge">ArgoCD</span>
+                            <span class="skill-badge">Kubernetes</span>
+                        </div>
+                        <button class="skills-toggle" aria-expanded="false">Show more</button>
+                    </div>
+                    <div class="skill-group">
+                        <h4><i class="fas fa-tools"></i> Infrastructure as Code</h4>
+                        <div class="skill-list" data-collapsible>
+                            <span class="skill-badge">Terraform</span>
+                            <span class="skill-badge">Databricks Asset Bundles</span>
+                            <span class="skill-badge">Ansible</span>
+                        </div>
+                        <button class="skills-toggle" aria-expanded="false">Show more</button>
+                    </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Retail Chat Agent Backend – Multimodal Product Discovery</h3>
+                    <p>AI chat assistant for multimodal product discovery (text or photo). Integrates OpenCLIP, BLIP, text embeddings and a vector DB; served with FastAPI on AWS for fast, relevant search results.</p>
+                    <div class="project-tags">
+                        <span>OpenCLIP</span>
+                        <span>BLIP</span>
+                        <span>FastAPI</span>
+                        <span>OpenAI</span>
+                        <span>Qdrant</span>
+                        <span>AWS</span>
+                    </div>
+                    <a href="https://github.com/jibbs1703/Retail-Chat-Agent-Backend" target="_blank" class="project-link"><i class="fab fa-github"></i> View on GitHub</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>Retail Chat Agent ETL – Automated Multimodal Data Pipeline</h3>
+                    <p>Production ETL pipeline that automates ingestion and vectorization of large e-commerce catalogs using Apache Airflow + Python, AWS S3 for images, PostgreSQL for metadata, and OpenCLIP/BLIP to populate Qdrant.</p>
+                    <div class="project-tags">
+                        <span>Airflow</span>
+                        <span>Python</span>
+                        <span>AWS S3</span>
+                        <span>PostgreSQL</span>
+                        <span>OpenCLIP</span>
+                        <span>BLIP</span>
+                        <span>Qdrant</span>
+                    </div>
+                    <a href="https://github.com/jibbs1703/Retail-Chat-Agent-ETL" target="_blank" class="project-link"><i class="fab fa-github"></i> View on GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h3>Human Resources Policy RAG Chatbot</h3>
+                    <p>Privacy-first RAG chatbot providing context-grounded HR policy answers using a local LLM and a self-hosted vector database.</p>
+                    <div class="project-tags">
                         <span>Databricks</span>
-                        <span>PySpark</span>
-                        <span>LLMs</span>
-                        <span>DevSecOps</span>
-                        <span>Terraform</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="experience-card">
-                <div class="experience-timeline">
-                    <span class="timeline-date">May 2023 to Nov 2024</span>
-                    <div class="timeline-logo">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                </div>
-                <div class="experience-content">
-                    <div class="experience-header">
-                        <h3 class="experience-role">Data Scientist</h3>
-                        <span class="experience-company"><i class="fas fa-building"></i> Blue Lambda Technologies • Atlanta, GA</span>
-                    </div>
-                    <ul class="experience-details">
-                        <li>Architected end-to-end ML systems across real estate, retail, and finance domains, delivering PyTorch, XGBoost, and Scikit-Learn models with 95%+ uptime via AWS SageMaker.</li>
-                        <li>Co-developed internal RAG platform using LangChain and Qdrant with Gemma 3.4B, resolving 7,000+ weekly employee queries and reducing support tickets by 42%.</li>
-                        <li>Owned data engineering backbone for 15+ concurrent models; built robust ETL pipelines on Databricks/AWS EMR with strict data lineage and quality gates.</li>
-                        <li>Instituted MLOps monitoring using Arize and MLflow for drift detection, maintaining &lt;5% metrics degradation over 18-month model lifecycles.</li>
-                        <li>Championed engineering standards with reproducible Docker/Devcontainer environments and CI/CD automation, reducing technical debt by 60%.</li>
-                    </ul>
-                    <div class="experience-tags">
-                        <span>AWS SageMaker</span>
-                        <span>PyTorch</span>
+                        <span>PDFPlumber</span>
                         <span>LangChain</span>
                         <span>Qdrant</span>
+                        <span>RAG</span>
+                    </div>
+                    <a href="https://github.com/jibbs1703" target="_blank" class="project-link"><i class="fab fa-github"></i> View on GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h3>Healthcare Data Mart & ML Pipeline</h3>
+                    <p>HIPAA-compliant data mart and ML pipeline ingesting ~30K records per batch with a fault-tolerant architecture (under 2% failure rate).</p>
+                    <div class="project-tags">
                         <span>Databricks</span>
-                        <span>MLflow</span>
-                        <span>Arize</span>
-                        <span>Docker</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="experience-card">
-                <div class="experience-timeline">
-                    <span class="timeline-date">Jan 2019 to Nov 2020</span>
-                    <div class="timeline-logo">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                </div>
-                <div class="experience-content">
-                    <div class="experience-header">
-                        <h3 class="experience-role">Data Science Consultant</h3>
-                        <span class="experience-company"><i class="fas fa-globe"></i> Upwork & Fiverr • Lagos, Nigeria (Remote)</span>
-                    </div>
-                    <ul class="experience-details">
-                        <li>Delivered custom ML solutions (Scikit-learn, XGBoost) for classification and regression, achieving 15% average R² uplift and 22% precision gain aligned to business KPIs.</li>
-                        <li>Architected real-time incremental data ingestion using PySpark on AWS EMR, processing 1.5M+ rows with sub-minute latency, reducing data-to-model latency by 87%.</li>
-                        <li>Engineered production-grade feature pipelines with automated hyperparameter optimization and SHAP-based explainability for non-technical stakeholders.</li>
-                        <li>Refactored legacy Jupyter notebooks into modular, PEP8-compliant packages with 99% test coverage for audit-ready client handoffs.</li>
-                    </ul>
-                    <div class="experience-tags">
-                        <span>Scikit-Learn</span>
-                        <span>XGBoost</span>
+                        <span>Terraform</span>
+                        <span>Azure DevOps</span>
                         <span>PySpark</span>
-                        <span>AWS EMR</span>
-                        <span>SHAP</span>
-                        <span>pytest</span>
+                    </div>
+                    <a href="https://github.com/jibbs1703" target="_blank" class="project-link"><i class="fab fa-github"></i> View on GitHub</a>
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Professional Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Machine Learning Engineer</h3>
+                        <p class="item-company"><img src="assets/icons/briefcase.svg" alt="Company" class="icon">Northwestern Medicine</p>
+                        <p class="item-location"><img src="assets/icons/location.svg" alt="Location" class="icon"> Chicago, IL</p>
+                        <div class="item-tags">
+                            <span>MLOps</span>
+                            <span>Model Deployment</span>
+                            <span>Python</span>
+                            <span>AWS</span>
+                        </div>
+                        <span class="timeline-date"><img src="assets/icons/calendar.svg" alt="Date" class="icon date-icon">December 2024 - Present</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Data Scientist</h3>
+                        <p class="item-company"><img src="assets/icons/briefcase.svg" alt="Company" class="icon">Blue Lambda Technologies</p>
+                        <p class="item-location"><img src="assets/icons/location.svg" alt="Location" class="icon"> Atlanta, GA</p>
+                        <div class="item-tags">
+                            <span>Data Science</span>
+                            <span>Feature Engineering</span>
+                            <span>SQL</span>
+                        </div>
+                        <span class="timeline-date"><img src="assets/icons/calendar.svg" alt="Date" class="icon date-icon">May 2023 - November 2024</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Data Scientist</h3>
+                        <p class="item-company"><img src="assets/icons/briefcase.svg" alt="Company" class="icon">Fiverr</p>
+                        <p class="item-location"><img src="assets/icons/location.svg" alt="Location" class="icon"> Lagos, Nigeria (Remote)</p>
+                        <div class="item-tags">
+                            <span>Data Science</span>
+                            <span>Remote</span>
+                            <span>Client Work</span>
+                        </div>
+                        <span class="timeline-date"><img src="assets/icons/calendar.svg" alt="Date" class="icon date-icon">January 2019 - November 2020</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Content and Learning Intern</h3>
+                        <p class="item-company"><img src="assets/icons/briefcase.svg" alt="Company" class="icon">Gidi Mobile</p>
+                        <p class="item-location"><img src="assets/icons/location.svg" alt="Location" class="icon"> Victoria Island, Lagos, Nigeria</p>
+                        <div class="item-tags">
+                            <span>Content</span>
+                            <span>Learning</span>
+                            <span>Internship</span>
+                        </div>
+                        <span class="timeline-date"><img src="assets/icons/calendar.svg" alt="Date" class="icon date-icon">January 2019 - December 2018</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section" id="education">
-            <h2 class="section-heading">EDUCATION</h2>
-            
-            <div class="education-card">
-                <div class="education-timeline">
-                    <span class="timeline-date">2021 - 2023</span>
-                    <div class="timeline-logo">
-                        <i class="fas fa-graduation-cap"></i>
+        <section id="education">
+            <h2>Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3><img src="assets/icons/education.svg" alt="Education" class="icon">Master of Science</h3>
+                        <p class="item-major">Agricultural Economics</p>
+                        <p class="item-university">University of Kentucky</p>
+                        <span class="timeline-date"><img src="assets/icons/calendar.svg" alt="Date" class="icon date-icon">2023</span>
                     </div>
                 </div>
-                <div class="education-content">
-                    <h3 class="education-degree">Master of Science in Agricultural Economics</h3>
-                    <span class="education-school"><i class="fas fa-university"></i> University of Kentucky • Lexington, KY</span>
-                    <p class="education-description">
-                        Advanced training in quantitative methods, econometrics, and data analysis. 
-                        Applied statistical modeling and machine learning techniques to agricultural 
-                        and economic research problems.
-                    </p>
-                    <div class="education-areas">
-                        <span>Data Analysis</span>
-                        <span>Data Science</span>
-                        <span>Econometrics</span>
-                        <span>Machine Learning</span>
-                        <span>Research Methods</span>
-                        <span>Statistical Modeling</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="education-card">
-                <div class="education-timeline">
-                    <span class="timeline-date">2012 - 2017</span>
-                    <div class="timeline-logo">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                </div>
-                <div class="education-content">
-                    <h3 class="education-degree">Bachelor of Science in Agricultural Economics</h3>
-                    <span class="education-school"><i class="fas fa-university"></i> University of Benin • Benin City, Nigeria</span>
-                    <p class="education-description">
-                        Comprehensive foundation in economics, statistics, and quantitative analysis. 
-                        Developed strong analytical skills that laid the groundwork for transition into 
-                        data science and machine learning.
-                    </p>
-                    <div class="education-areas">
-                        <span>Economics</span>
-                        <span>Mathematics</span>
-                        <span>Quantitative Analysis</span>
-                        <span>Research Methods</span>
-                        <span>Statistics</span>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3><img src="assets/icons/education.svg" alt="Education" class="icon">Bachelor of Science</h3>
+                        <p class="item-major">Agricultural Economics</p>
+                        <p class="item-university">University of Benin</p>
+                        <span class="timeline-date"><img src="assets/icons/calendar.svg" alt="Date" class="icon date-icon">2017</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section" id="projects">
-            <h2 class="section-heading">SELECT PROJECTS</h2>
-            
-            <div class="project-item featured">
-                <span class="featured-badge"><i class="fas fa-star"></i> Featured</span>
-                <div class="project-header">
-                    <h3 class="project-name">Retail Multimodal Product Discovery Agent</h3>
-                    <a href="https://github.com/jibbs1703/Retail-Chat-Agent" target="_blank" class="project-link-icon">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </div>
-                <p class="project-description">
-                    Multimodal product discovery with text, images, or both. Uses BLIP + OpenCLIP embeddings 
-                    with CrossEncoder re-ranking for precision. Scalable product catalog with fast vector search.
-                </p>
-                <div class="project-tags">
-                    <span>Airflow</span>
-                    <span>BLIP</span>
-                    <span>FastAPI</span>
-                    <span>LangGraph</span>
-                    <span>OpenCLIP</span>
-                    <span>Qdrant</span>
-                </div>
-            </div>
+        
 
-            <div class="project-item">
-                <div class="project-header">
-                    <h3 class="project-name">Human Resources Policy RAG Chatbot</h3>
-                    <a href="https://github.com/jibbs1703" target="_blank" class="project-link-icon">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </div>
-                <p class="project-description">
-                    Privacy-first RAG chatbot for context-grounded HR policy answers. Local LLM integration 
-                    with self-hosted vector database. Zero external API dependencies for data security.
-                </p>
-                <div class="project-tags">
-                    <span>Databricks</span>
-                    <span>PDFPlumber</span>
-                    <span>LangChain</span>
-                    <span>Qdrant</span>
-                    <span>RAG</span>
-                </div>
-            </div>
-
-            <div class="project-item">
-                <div class="project-header">
-                    <h3 class="project-name">Healthcare Data Mart & ML Pipeline</h3>
-                    <a href="https://github.com/jibbs1703" target="_blank" class="project-link-icon">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </div>
-                <p class="project-description">
-                    HIPAA-compliant data mart ingesting 30K records/batch. Fault-tolerant architecture with 
-                    &lt;2% failure rate. Terraform & Azure DevOps CI/CD—95% fewer manual retries.
-                </p>
-                <div class="project-tags">
-                    <span>Databricks</span>
-                    <span>Terraform</span>
-                    <span>Azure DevOps</span>
-                    <span>PySpark</span>
-                </div>
-            </div>
-
-            <div class="project-item">
-                <div class="project-header">
-                    <h3 class="project-name">GitHub Unfollower Agent</h3>
-                    <a href="https://github.com/jibbs1703/Github-Unfollower-Agent" target="_blank" class="project-link-icon">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </div>
-                <p class="project-description">
-                    AI agent interpreting natural language to manage GitHub connections. Open-Source LLM 
-                    inference via Ollama with Qdrant vector storage. Deployed on AWS EC2 with Docker & Nginx.
-                </p>
-                <div class="project-tags">
-                    <span>FastAPI</span>
-                    <span>LangChain</span>
-                    <span>Ollama</span>
-                    <span>AWS EC2</span>
-                </div>
-            </div>
-
-            <div class="view-all">
-                <a href="https://github.com/jibbs1703" target="_blank" class="view-all-link">
-                    View All Projects on GitHub →
-                </a>
-            </div>
-        </section>
-
-        <section class="section" id="skills">
-            <h2 class="section-heading">SKILLS & TECHNOLOGIES</h2>
-            
-            <div class="skills-grid">
-                <div class="skill-group">
-                    <h4 class="skill-category"><i class="fas fa-code"></i> Languages</h4>
-                    <p class="skill-list">Python, SQL, Bash, HCL, Groovy</p>
-                </div>
-                
-                <div class="skill-group">
-                    <h4 class="skill-category"><i class="fas fa-brain"></i> Machine Learning</h4>
-                    <p class="skill-list">PyTorch, Scikit-Learn, XGBoost, PySpark MLlib, ONNX, Deep Learning, NLP, Computer Vision</p>
-                </div>
-                
-                <div class="skill-group">
-                    <h4 class="skill-category"><i class="fas fa-robot"></i> Generative AI</h4>
-                    <p class="skill-list">Large Language Models, LangChain, LangGraph, Prompt Engineering, Retrieval Augmentation Generation, Vector Databases, Model Context Protocol (MCP)</p>
-                </div>
-                
-                <div class="skill-group">
-                    <h4 class="skill-category"><i class="fas fa-cogs"></i> MLOps & Platforms</h4>
-                    <p class="skill-list">Docker, Terraform, MLflow, Triton Server, AWS SageMaker, Azure ML, Databricks</p>
-                </div>
-                
-                <div class="skill-group">
-                    <h4 class="skill-category"><i class="fas fa-database"></i> Data Engineering</h4>
-                    <p class="skill-list">Polars, Pandas, Apache Spark, Apache Airflow, ETL/ELT, SQL</p>
-                </div>
-
-                <div class="skill-group">
-                    <h4 class="skill-category"><i class="fas fa-code-branch"></i> Continuous Integration & Delivery</h4>
-                    <p class="skill-list">Azure DevOps, GitHub Actions, Jenkins, GitLab CI/CD, ArgoCD, Docker, Kubernetes, Terraform, Ansible</p>
-                </div>
-            </div>
-        </section>
-
-        <footer class="footer">
-            <p>© 2026 Abraham Ajibade. AI & Machine Learning Engineer based in Chicago, Illinois.</p>
+        <footer>
+            <p>© 2026 Abraham Ajibade. All Rights Reserved.</p>
         </footer>
-    </main>
+    </div>
+    <script>
+        (function() {
+            const body = document.body;
+            const themeToggle = document.getElementById('theme-toggle');
+            const menuToggle = document.getElementById('menu-toggle');
+            const nav = document.querySelector('.top-nav');
+            const storedTheme = localStorage.getItem('site-theme');
+            if (storedTheme === 'light') body.classList.add('light-theme');
 
-    <button class="back-to-top" id="backToTop" aria-label="Back to top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
+            function updateThemeButton() {
+                themeToggle.textContent = body.classList.contains('light-theme') ? '☀️' : '🌙';
+                themeToggle.setAttribute('aria-pressed', body.classList.contains('light-theme'));
+            }
 
-    <script src="script.js"></script>
+            themeToggle && themeToggle.addEventListener('click', function() {
+                const isLight = body.classList.toggle('light-theme');
+                localStorage.setItem('site-theme', isLight ? 'light' : 'dark');
+                updateThemeButton();
+            });
+
+            updateThemeButton();
+
+            // Menu toggle for mobile
+            menuToggle && menuToggle.addEventListener('click', function() {
+                const isOpen = nav.classList.toggle('open');
+                menuToggle.setAttribute('aria-expanded', String(isOpen));
+                menuToggle.textContent = isOpen ? '✕' : '☰';
+            });
+
+            // Close mobile menu when clicking a nav link
+            document.querySelectorAll('.top-nav a').forEach(a => {
+                a.addEventListener('click', () => {
+                    if (nav.classList.contains('open')) {
+                        nav.classList.remove('open');
+                        menuToggle.setAttribute('aria-expanded', 'false');
+                        menuToggle.textContent = '☰';
+                    }
+                });
+            });
+
+            // Scroll spy: set active nav link based on section or in-page anchor in view
+            const navLinks = Array.from(document.querySelectorAll('.top-nav a'));
+            const sections = navLinks
+                .map(link => {
+                    const href = link.getAttribute('href') || '';
+                    return href.startsWith('#') ? document.querySelector(href) : null;
+                })
+                .filter(Boolean);
+
+            function onScroll() {
+                const scrollPos = window.scrollY + (window.innerHeight * 0.18);
+                let currentId = sections[0] && sections[0].id;
+                for (const sec of sections) {
+                    const rect = sec.getBoundingClientRect();
+                    const top = window.scrollY + rect.top;
+                    if (scrollPos >= top) currentId = sec.id;
+                }
+                navLinks.forEach(link => {
+                    const href = link.getAttribute('href') || '';
+                    if (!href.startsWith('#')) {
+                        link.classList.remove('active');
+                        return;
+                    }
+                    const id = href.replace('#', '');
+                    if (id === currentId) link.classList.add('active'); else link.classList.remove('active');
+                });
+            }
+
+            window.addEventListener('scroll', onScroll, { passive: true });
+            onScroll();
+
+            // Skills collapse toggles for mobile: collapse lists that overflow
+            function initSkillsCollapses() {
+                const lists = Array.from(document.querySelectorAll('.skill-list'));
+                lists.forEach(list => {
+                    const toggle = list.parentElement.querySelector('.skills-toggle');
+                    if (!toggle) return;
+                    // If list is taller than collapsed height, start collapsed on small screens
+                    const needsCollapse = list.scrollHeight > 84;
+                    if (needsCollapse) list.classList.add('collapsed');
+                    function updateToggle() {
+                        const isCollapsed = list.classList.contains('collapsed');
+                        toggle.textContent = isCollapsed ? 'Show more' : 'Show less';
+                        toggle.setAttribute('aria-expanded', String(!isCollapsed));
+                    }
+                    toggle.addEventListener('click', () => {
+                        list.classList.toggle('collapsed');
+                        updateToggle();
+                    });
+                    updateToggle();
+                });
+            }
+
+            // Initialize on load and on resize (so desktop->mobile toggles behave)
+            window.addEventListener('resize', () => { initSkillsCollapses(); });
+            initSkillsCollapses();
+
+            // Contact form: open default mail client with filled subject/body
+            const contactForm = document.getElementById('contact-form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const name = encodeURIComponent(document.getElementById('name').value.trim());
+                    const email = encodeURIComponent(document.getElementById('email').value.trim());
+                    const message = encodeURIComponent(document.getElementById('message').value.trim());
+                    const subject = encodeURIComponent('Website contact from ' + (name || email));
+                    const body = encodeURIComponent(`Name: ${decodeURIComponent(name)}\nEmail: ${decodeURIComponent(email)}\n\n${decodeURIComponent(message)}`);
+                    const mailto = `mailto:abraham.ajibade@gmail.com?subject=${subject}&body=${body}`;
+                    window.location.href = mailto;
+                });
+            }
+        })();
+    </script>
 </body>
 </html>
