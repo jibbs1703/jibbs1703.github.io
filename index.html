@@ -50,12 +50,11 @@
                     <img src="documents/Abraham Ajibade Photo.jpeg" alt="Abraham Ajibade — AI/ML Engineer" class="about-photo" loading="lazy" width="280" height="280">
                 </div>
                 <div class="about-text">
-                    <p class="lead">Artificial Intelligence &amp; Machine Learning Engineer specializing in MLOps, LLMs, and end-to-end ML solutions.</p>
-                    <p>I design and deploy production-ready ML systems, integrate large language models, and build reliable data platforms for scalable machine learning workflows.</p>
+                    <p>I design and deploy production-ready Machine Learning (ML) systems, integrate large language models (LLMs), and build reliable data platforms for scalable machine learning workflows.</p>
 
                     <div class="role-row" aria-hidden="false">
-                        <span class="role-badge"><i class="fas fa-robot" aria-hidden="true"></i> AI Engineer</span>
-                        <span class="role-badge"><i class="fas fa-brain" aria-hidden="true"></i> ML Engineer</span>
+                        <span class="role-badge"><i class="fas fa-robot" aria-hidden="true"></i> Artificial Intelligence Engineer</span>
+                        <span class="role-badge"><i class="fas fa-brain" aria-hidden="true"></i> Machine Learning Engineer</span>
                         <span class="role-badge"><i class="fas fa-database" aria-hidden="true"></i> Data Engineer</span>
                         <span class="role-location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Chicago, IL</span>
                     </div>
@@ -87,21 +86,24 @@
                             <span class="skill-badge">LangChain</span>
                             <span class="skill-badge">LangGraph</span>
                             <span class="skill-badge">Prompt Engineering</span>
-                            <span class="skill-badge">RAG</span>
+                            <span class="skill-badge">Retreival Augmented Generation</span>
+                            <span class="skill-badge">Semantic Kernel</span>
                             <span class="skill-badge">Vector Databases</span>
-                            <span class="skill-badge">MCP</span>
+                            <span class="skill-badge">Model Context Protocol</span>
                         </div>
                         <button class="skills-toggle" aria-expanded="false">Show more</button>
                     </div>
                     <div class="skill-group">
-                        <h4><i class="fas fa-cogs"></i> MLOps & Platforms</h4>
+                        <h4><i class="fas fa-cogs"></i> MLOps & LLMOps</h4>
                         <div class="skill-list" data-collapsible>
                             <span class="skill-badge">Docker</span>
-                            <span class="skill-badge">Terraform</span>
+                            <span class="skill-badge">Kubernetes</span>
                             <span class="skill-badge">MLflow</span>
                             <span class="skill-badge">Triton</span>
                             <span class="skill-badge">AWS SageMaker</span>
-                            <span class="skill-badge">Azure ML</span>
+                            <span class="skill-badge">AWS Bedrock</span>
+                            <span class="skill-badge">Azure Foundry</span>
+                            <span class="skill-badge">Azure Machine Learning</span>
                             <span class="skill-badge">Databricks</span>
                         </div>
                         <button class="skills-toggle" aria-expanded="false">Show more</button>
@@ -112,30 +114,36 @@
                             <span class="skill-badge">Polars</span>
                             <span class="skill-badge">Pandas</span>
                             <span class="skill-badge">Apache Spark</span>
-                            <span class="skill-badge">Airflow</span>
+                            <span class="skill-badge">Apache Airflow</span>
+                            <span class="skill-badge">Luigi</span>
                             <span class="skill-badge">ETL/ELT</span>
                             <span class="skill-badge">SQL</span>
                         </div>
                         <button class="skills-toggle" aria-expanded="false">Show more</button>
                     </div>
                     <div class="skill-group">
-                        <h4><i class="fas fa-code-branch"></i> CI/CD</h4>
+                        <h4><i class="fas fa-code-branch"></i> CI/CD and Version Control</h4>
                         <div class="skill-list" data-collapsible>
-                            <span class="skill-badge">Azure DevOps</span>
                             <span class="skill-badge">GitHub Actions</span>
                             <span class="skill-badge">Jenkins</span>
                             <span class="skill-badge">Drone CI</span>
                             <span class="skill-badge">ArgoCD</span>
-                            <span class="skill-badge">Kubernetes</span>
+                            <span class="skill-badge">GitHub</span>
+                            <span class="skill-badge">Azure DevOps</span>
+                            <span class="skill-badge">AWS CodeBuild</span>
                         </div>
                         <button class="skills-toggle" aria-expanded="false">Show more</button>
                     </div>
                     <div class="skill-group">
-                        <h4><i class="fas fa-tools"></i> Infrastructure as Code</h4>
+                        <h4><i class="fas fa-tools"></i> Infrastructure as Code and Cloud Computing</h4>
                         <div class="skill-list" data-collapsible>
                             <span class="skill-badge">Terraform</span>
                             <span class="skill-badge">Databricks Asset Bundles</span>
                             <span class="skill-badge">Ansible</span>
+                            <span class="skill-badge">Git</span>
+                            <span class="skill-badge">AWS</span>
+                            <span class="skill-badge">Azure</span>
+                            <span class="skill-badge">GCP</span>
                         </div>
                         <button class="skills-toggle" aria-expanded="false">Show more</button>
                     </div>
@@ -146,7 +154,7 @@
             <h2>Projects</h2>
             <div class="projects-grid">
                 <div class="project-card">
-                    <h3>Retail Chat Agent Backend – Multimodal Product Discovery</h3>
+                    <h3>Retail Chat Agent Backend</h3>
                     <p>AI chat assistant for multimodal product discovery (text or photo). Integrates OpenCLIP, BLIP, text embeddings and a vector DB; served with FastAPI on AWS for fast, relevant search results.</p>
                     <div class="project-tags">
                         <span>OpenCLIP</span>
@@ -160,7 +168,7 @@
                 </div>
 
                 <div class="project-card">
-                    <h3>Retail Chat Agent ETL – Automated Multimodal Data Pipeline</h3>
+                    <h3>Retail Chat Agent ETL</h3>
                     <p>Production ETL pipeline that automates ingestion and vectorization of large e-commerce catalogs using Apache Airflow + Python, AWS S3 for images, PostgreSQL for metadata, and OpenCLIP/BLIP to populate Qdrant.</p>
                     <div class="project-tags">
                         <span>Airflow</span>
@@ -189,10 +197,11 @@
                     <h3>Healthcare Data Mart & ML Pipeline</h3>
                     <p>HIPAA-compliant data mart and ML pipeline ingesting ~30K records per batch with a fault-tolerant architecture (under 2% failure rate).</p>
                     <div class="project-tags">
-                        <span>Databricks</span>
-                        <span>Terraform</span>
-                        <span>Azure DevOps</span>
+                        <span>Databricks Asset Bundles</span>
+                        <span>ETL/ELT</span>
                         <span>PySpark</span>
+                        <span>Electronic Medical Records</span>
+                        <span>HIPAA Compliance</span>
                     </div>
                     <a href="https://github.com/jibbs1703" target="_blank" class="project-link"><i class="fab fa-github"></i> View on GitHub</a>
                 </div>
@@ -210,9 +219,20 @@
                         <p class="item-location"><img src="assets/icons/location.svg" alt="Location" class="icon"> Chicago, IL</p>
                         <div class="item-tags">
                             <span>MLOps</span>
+                            <span>LLMOps</span>
                             <span>Model Deployment</span>
                             <span>Python</span>
-                            <span>AWS</span>
+                            <span>Cloud Computing</span>
+                            <span>Docker</span>
+                            <span>MLflow</span>
+                            <span>Databricks</span>
+                            <span>PySpark</span>
+                            <span>Triton Inference Server</span>
+                            <span>Continuous Integration/Continuous Deployment</span>
+                            <span>Model Monitoring</span>
+                            <span>Data Engineering</span>
+                            <span>Machine Learning</span>
+                            <span>Version Control</span>
                         </div>
                         <span class="timeline-date"><img src="assets/icons/calendar.svg" alt="Date" class="icon date-icon">December 2024 - Present</span>
                     </div>
@@ -223,8 +243,17 @@
                         <p class="item-company"><img src="assets/icons/briefcase.svg" alt="Company" class="icon">Blue Lambda Technologies</p>
                         <p class="item-location"><img src="assets/icons/location.svg" alt="Location" class="icon"> Atlanta, GA</p>
                         <div class="item-tags">
+                            <span>API Development</span>
+                            <span>Cloud Computing</span>
+                            <span>Continuous Integration/Continuous Deployment</span>
+                            <span>Data Engineering</span>
                             <span>Data Science</span>
+                            <span>Docker</span>
+                            <span>ETL/ELT</span>
                             <span>Feature Engineering</span>
+                            <span>Machine Learning</span>
+                            <span>Model Deployment</span>
+                            <span>Python</span>
                             <span>SQL</span>
                         </div>
                         <span class="timeline-date"><img src="assets/icons/calendar.svg" alt="Date" class="icon date-icon">May 2023 - November 2024</span>
@@ -236,9 +265,14 @@
                         <p class="item-company"><img src="assets/icons/briefcase.svg" alt="Company" class="icon">Fiverr</p>
                         <p class="item-location"><img src="assets/icons/location.svg" alt="Location" class="icon"> Lagos, Nigeria (Remote)</p>
                         <div class="item-tags">
+                            <span>Cloud Computing</span>
                             <span>Data Science</span>
-                            <span>Remote</span>
-                            <span>Client Work</span>
+                            <span>PySpark</span>
+                            <span>Python</span>
+                            <span>Scikit-Learn</span>
+                            <span>SHAP</span>
+                            <span>XGBoost</span>
+                            <span>SQL</span>
                         </div>
                         <span class="timeline-date"><img src="assets/icons/calendar.svg" alt="Date" class="icon date-icon">January 2019 - November 2020</span>
                     </div>

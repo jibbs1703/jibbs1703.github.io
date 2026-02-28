@@ -4,7 +4,7 @@
     --muted: #a0a0a0;
     --card: #1a1a1a;
     --border: #333;
-    --accent: #06b6d4; /* cyan accent */
+    --accent: #06b6d4;
 }
 
 .light-theme {
@@ -47,7 +47,6 @@ header {
     min-width: 0;
 }
 
-/* Responsive spacing and visual pass tweaks */
 @media (min-width: 1024px) {
     .container { max-width: 920px; padding: 3rem; }
     .about-content { grid-template-columns: 220px 1fr; gap: 2.5rem; align-items: start; }
@@ -70,12 +69,10 @@ header {
     .header-right .resume-button { display: none; }
     .timeline { padding: 1rem 0; }
     .timeline-content { min-height: 80px; }
-    /* slightly lower collapsed height on small phones */
     .skill-list.collapsed { max-height: 72px; }
     h2 { scroll-margin-top: 72px; }
 }
 
-/* Contact section */
 .contact-section { margin-bottom: 3rem; }
 .contact-grid {
     display: grid;
@@ -113,7 +110,6 @@ header {
     cursor: pointer;
     font-weight: 700;
 }
-/* contact-info removed: single-column form only */
 
 @media (max-width: 900px) {
     .contact-grid { grid-template-columns: 1fr; }
@@ -189,7 +185,6 @@ html {
     border-bottom: 2px solid transparent;
 }
 
-/* Theme toggle placed in nav */
 .nav-theme-toggle {
     background: transparent;
     border: 1px solid transparent;
@@ -202,7 +197,6 @@ html {
 
 .nav-theme-toggle:hover { color: var(--text); }
 
-/* Fixed top-right theme toggle */
 .fixed-theme-toggle {
     position: fixed;
     top: 14px;
@@ -253,7 +247,6 @@ html {
     color: var(--text);
 }
 
-/* Mobile menu styles when open */
 .top-nav.open {
     display: flex;
     position: absolute;
@@ -314,7 +307,6 @@ html {
 
 .theme-toggle:hover { color: var(--text); }
 
-/* Icon used for education/location markers */
 .icon {
     display: inline-block;
     width: 18px;
@@ -352,14 +344,12 @@ h2 {
     padding-bottom: 1rem;
 }
 
-/* Ensure in-page anchors are not hidden under the header */
 h2 { scroll-margin-top: 88px; }
 
 section {
     margin-bottom: 4rem;
 }
 
-/* About card styling */
 #about {
     background: var(--card);
     border: 1px solid var(--border);
@@ -408,7 +398,6 @@ section {
     letter-spacing: .01em;
 }
 
-/* Role badges and location */
 .role-row {
     margin-top: 0.75rem;
     display: flex;
@@ -435,18 +424,15 @@ section {
     .role-row { justify-content: center; }
 }
 
-/* Ensure Font Awesome icons match theme colors in both dark and light modes */
 .fab, .fas, .far, .fal, .fa {
-    color: var(--text); /* bright in dark theme */
+    color: var(--text);
     transition: color 120ms ease;
 }
 
-/* Invert icon brightness in light theme */
 .light-theme .fab, .light-theme .fas, .light-theme .far, .light-theme .fal, .light-theme .fa {
     color: var(--muted);
 }
 
-/* Header and nav icons should inherit link color and become more visible on hover/focus */
 .top-nav a, .header-right a, .project-link, .role-badge, .role-location {
     color: var(--muted);
 }
@@ -457,10 +443,8 @@ section {
     color: var(--text);
 }
 
-/* Make sure inline <i> icons inherit color */
 .role-badge i, .role-location i, .skill-group h4 i { color: inherit; }
 
-/* CTAs under about text */
 .about-ctas { margin-top: 1rem; display:flex; gap:.6rem; align-items:center; }
 .btn-primary, .btn-secondary { padding: .5rem .9rem; border-radius: 9px; font-weight:700; font-size:0.95rem; text-decoration:none; display:inline-block; }
 .btn-primary { background: var(--accent); color: #061323; border: 1px solid rgba(255,255,255,0.06); box-shadow: 0 8px 18px rgba(6,182,212,0.08); }
@@ -569,7 +553,6 @@ section {
     font-size: 0.75rem;
 }
 
-/* Skill badges: compact and consistent with project tags */
 .skill-badge {
     background-color: var(--border);
     color: var(--text);
@@ -596,10 +579,16 @@ section {
     display: none;
 }
 
-/* Collapse long skill lists on small screens */
 .skill-list.collapsed {
     max-height: 84px;
     overflow: hidden;
+}
+
+/* Expand collapsed skill lists when the card is hovered or focused */
+.skill-group:hover .skill-list,
+.skill-group:focus-within .skill-list {
+    max-height: 1000px;
+    overflow: visible;
 }
 
 @media (max-width: 768px) {

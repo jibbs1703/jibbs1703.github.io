@@ -19,14 +19,12 @@
 
     updateThemeButton();
 
-    // Menu toggle for mobile
     menuToggle && menuToggle.addEventListener('click', function() {
         const isOpen = nav.classList.toggle('open');
         menuToggle.setAttribute('aria-expanded', String(isOpen));
         menuToggle.textContent = isOpen ? '✕' : '☰';
     });
 
-    // Close mobile menu when clicking a nav link
     document.querySelectorAll('.top-nav a').forEach(a => {
         a.addEventListener('click', () => {
             if (nav.classList.contains('open')) {
@@ -37,7 +35,6 @@
         });
     });
 
-    // Scroll spy: set active nav link based on section or in-page anchor in view
     const navLinks = Array.from(document.querySelectorAll('.top-nav a'));
     const sections = navLinks
         .map(link => {
@@ -68,13 +65,11 @@
     window.addEventListener('scroll', onScroll, { passive: true });
     onScroll();
 
-    // Skills collapse toggles for mobile: collapse lists that overflow
     function initSkillsCollapses() {
         const lists = Array.from(document.querySelectorAll('.skill-list'));
         lists.forEach(list => {
             const toggle = list.parentElement.querySelector('.skills-toggle');
             if (!toggle) return;
-            // If list is taller than collapsed height, start collapsed on small screens
             const needsCollapse = list.scrollHeight > 84;
             if (needsCollapse) list.classList.add('collapsed');
             function updateToggle() {
@@ -90,11 +85,9 @@
         });
     }
 
-    // Initialize on load and on resize (so desktop->mobile toggles behave)
     window.addEventListener('resize', () => { initSkillsCollapses(); });
     initSkillsCollapses();
 
-    // Contact form: open default mail client with filled subject/body
     const contactForm = document.getElementById('contact-form');
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
