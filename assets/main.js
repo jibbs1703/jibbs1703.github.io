@@ -3,19 +3,22 @@
     const themeToggle = document.getElementById('theme-toggle');
     const menuToggle = document.getElementById('menu-toggle');
     const nav = document.querySelector('.top-nav');
-    const storedTheme = localStorage.getItem('site-theme');
-    if (storedTheme === 'light') body.classList.add('light-theme');
+    
+    // Force light theme
+    body.classList.add('light-theme');
+    themeToggle.style.display = 'none';
 
     function updateThemeButton() {
         themeToggle.textContent = body.classList.contains('light-theme') ? '☀️' : '🌙';
         themeToggle.setAttribute('aria-pressed', body.classList.contains('light-theme'));
     }
 
-    themeToggle && themeToggle.addEventListener('click', function() {
-        const isLight = body.classList.toggle('light-theme');
-        localStorage.setItem('site-theme', isLight ? 'light' : 'dark');
-        updateThemeButton();
-    });
+    // Theme toggle disabled for now
+    // themeToggle && themeToggle.addEventListener('click', function() {
+    //     const isLight = body.classList.toggle('light-theme');
+    //     localStorage.setItem('site-theme', isLight ? 'light' : 'dark');
+    //     updateThemeButton();
+    // });
 
     updateThemeButton();
 
