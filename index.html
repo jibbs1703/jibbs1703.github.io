@@ -26,9 +26,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+    <div id="cursor-glow" aria-hidden="true"></div>
+    <div class="scroll-progress-bar" id="scroll-progress" aria-hidden="true"></div>
+    <div class="grain-overlay" aria-hidden="true"></div>
     <div class="container">
         <header>
-            <div class="header-left"></div>
+            <div class="header-left">
+                <a href="#hero" class="header-name">Abraham Ajibade</a>
+            </div>
             <button id="menu-toggle" class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
             <nav class="top-nav" aria-label="Main navigation">
                 <a href="#about">About</a>
@@ -56,11 +61,7 @@
                     <span><i class="fas fa-brain"></i> ML Engineer</span>
                     <span><i class="fas fa-database"></i> Data Engineer</span>
                 </div>
-                <p class="hero-sub">Building production-ready ML systems &middot; Integrating LLMs &middot; Scaling Data Platforms</p>
-                <div class="hero-ctas">
-                    <a href="#projects" class="btn-primary"><i class="fas fa-code-branch"></i>&nbsp; View Projects</a>
-                    <a href="#about" class="btn-secondary"><i class="fas fa-user"></i>&nbsp; About Me</a>
-                </div>
+                <p class="hero-typewriter">I build <span id="hero-type"></span><span class="type-cursor" aria-hidden="true">|</span></p>
             </div>
         </section>
 
@@ -73,11 +74,15 @@
                 <div class="about-text">
                     <p>I design and deploy production-ready Machine Learning (ML) systems, integrate large language models (LLMs), and build reliable data platforms for scalable machine learning workflows.</p>
 
-                    <div class="role-row" aria-hidden="false">
-                        <span class="role-badge"><i class="fas fa-robot" aria-hidden="true"></i> Artificial Intelligence Engineer</span>
-                        <span class="role-badge"><i class="fas fa-brain" aria-hidden="true"></i> Machine Learning Engineer</span>
-                        <span class="role-badge"><i class="fas fa-database" aria-hidden="true"></i> Data Engineer</span>
-                        <span class="role-location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Chicago, IL</span>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="7" data-suffix="+">7+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="5">5</span>
+                            <span class="stat-label">Roles Held</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -107,7 +112,7 @@
                             <span class="skill-badge">LangChain</span>
                             <span class="skill-badge">LangGraph</span>
                             <span class="skill-badge">Prompt Engineering</span>
-                            <span class="skill-badge">Retreival Augmented Generation</span>
+                            <span class="skill-badge">Retrieval Augmented Generation</span>
                             <span class="skill-badge">Semantic Kernel</span>
                             <span class="skill-badge">Vector Databases</span>
                             <span class="skill-badge">Model Context Protocol</span>
@@ -170,6 +175,12 @@
                     </div>
             </div>
         </section>
+
+        <div class="marquee-strip" aria-hidden="true">
+            <div class="marquee-track">
+                <span>PyTorch</span><span class="sep">&nbsp;&middot;&nbsp;</span><span>LangChain</span><span class="sep">&nbsp;&middot;&nbsp;</span><span>LangGraph</span><span class="sep">&nbsp;&middot;&nbsp;</span><span>MLflow</span><span class="sep">&nbsp;&middot;&nbsp;</span><span>Docker</span><span class="sep">&nbsp;&middot;&nbsp;</span><span>Kubernetes</span><span class="sep">&nbsp;&middot;&nbsp;</span><span>PySpark</span><span class="sep">&nbsp;&middot;&nbsp;</span><span>Apache Airflow</span><span class="sep">&nbsp;&middot;&nbsp;</span><span>Databricks</span><span class="sep">&nbsp;&middot;&nbsp;</span><span>AWS SageMaker</span><span class="sep">&nbsp;&middot;&nbsp;</span><span>Azure ML</span><span class="sep">&nbsp;&middot;&nbsp;</span><span>FastAPI</span><span class="sep">&nbsp;&middot;&nbsp;</span><span>Qdrant</span><span class="sep">&nbsp;&middot;&nbsp;</span><span>Triton</span><span class="sep">&nbsp;&middot;&nbsp;</span><span>Terraform</span><span class="sep">&nbsp;&middot;&nbsp;</span><span>XGBoost</span><span class="sep">&nbsp;&middot;&nbsp;</span><span>Scikit-Learn</span><span class="sep">&nbsp;&middot;&nbsp;</span><span>Polars</span><span class="sep">&nbsp;&middot;&nbsp;</span><span>ONNX</span><span class="sep">&nbsp;&middot;&nbsp;</span><span>PyTorch</span><span class="sep">&nbsp;&middot;&nbsp;</span><span>LangChain</span><span class="sep">&nbsp;&middot;&nbsp;</span><span>LangGraph</span><span class="sep">&nbsp;&middot;&nbsp;</span><span>MLflow</span><span class="sep">&nbsp;&middot;&nbsp;</span><span>Docker</span><span class="sep">&nbsp;&middot;&nbsp;</span><span>Kubernetes</span><span class="sep">&nbsp;&middot;&nbsp;</span><span>PySpark</span><span class="sep">&nbsp;&middot;&nbsp;</span><span>Apache Airflow</span><span class="sep">&nbsp;&middot;&nbsp;</span><span>Databricks</span><span class="sep">&nbsp;&middot;&nbsp;</span><span>AWS SageMaker</span><span class="sep">&nbsp;&middot;&nbsp;</span><span>Azure ML</span><span class="sep">&nbsp;&middot;&nbsp;</span><span>FastAPI</span><span class="sep">&nbsp;&middot;&nbsp;</span><span>Qdrant</span><span class="sep">&nbsp;&middot;&nbsp;</span><span>Triton</span><span class="sep">&nbsp;&middot;&nbsp;</span><span>Terraform</span><span class="sep">&nbsp;&middot;&nbsp;</span><span>XGBoost</span><span class="sep">&nbsp;&middot;&nbsp;</span><span>Scikit-Learn</span><span class="sep">&nbsp;&middot;&nbsp;</span><span>Polars</span><span class="sep">&nbsp;&middot;&nbsp;</span><span>ONNX</span><span class="sep">&nbsp;&middot;&nbsp;</span>
+            </div>
+        </div>
 
         <section id="projects" class="reveal">
             <h2>Projects</h2>
@@ -331,7 +342,7 @@
                             <span>Content Development</span>
                             <span>Education Policy</span>
                         </div>
-                        <span class="timeline-date"><img src="assets/icons/calendar.svg" alt="Date" class="icon date-icon">January 2019 - December 2018</span>
+                        <span class="timeline-date"><img src="assets/icons/calendar.svg" alt="Date" class="icon date-icon">January 2018 - December 2018</span>
                     </div>
                 </div>
             </div>
@@ -372,6 +383,7 @@
             <p>© 2026 Abraham Ajibade. All Rights Reserved.</p>
         </footer>
     </div>
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
     <script src="assets/main.js"></script>
 </body>
 </html>
