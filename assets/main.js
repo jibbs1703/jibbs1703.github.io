@@ -4,21 +4,23 @@
     const menuToggle = document.getElementById('menu-toggle');
     const nav = document.querySelector('.top-nav');
     
-    // Force light theme
-    body.classList.add('light-theme');
-    themeToggle.style.display = 'none';
+    // Restore saved theme preference (defaults to dark)
+    const savedTheme = localStorage.getItem('site-theme');
+    if (savedTheme === 'light') {
+        body.classList.add('light-theme');
+    }
 
     function updateThemeButton() {
         themeToggle.textContent = body.classList.contains('light-theme') ? '☀️' : '🌙';
         themeToggle.setAttribute('aria-pressed', body.classList.contains('light-theme'));
+        themeToggle.setAttribute('aria-label', body.classList.contains('light-theme') ? 'Switch to dark mode' : 'Switch to light mode');
     }
 
-    // Theme toggle disabled for now
-    // themeToggle && themeToggle.addEventListener('click', function() {
-    //     const isLight = body.classList.toggle('light-theme');
-    //     localStorage.setItem('site-theme', isLight ? 'light' : 'dark');
-    //     updateThemeButton();
-    // });
+    themeToggle && themeToggle.addEventListener('click', function() {
+        const isLight = body.classList.toggle('light-theme');
+        localStorage.setItem('site-theme', isLight ? 'light' : 'dark');
+        updateThemeButton();
+    });
 
     updateThemeButton();
 

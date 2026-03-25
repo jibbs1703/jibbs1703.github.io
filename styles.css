@@ -318,31 +318,8 @@ html {
 
 .nav-theme-toggle:hover { color: var(--text); }
 
-.fixed-theme-toggle {
-    position: fixed;
-    top: 14px;
-    right: 16px;
-    z-index: 1200;
-    background-color: var(--card);
-    border: 1px solid var(--border);
-    color: var(--muted);
-    padding: 0.35rem 0.6rem;
-    border-radius: 8px;
-    font-size: 0.95rem;
-    cursor: pointer;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
-    transition: all 0.3s ease;
-}
-
-.fixed-theme-toggle:hover {
-    color: var(--accent);
-    border-color: var(--accent);
-    box-shadow: 0 6px 20px rgba(6, 182, 212, 0.2), 0 0 15px rgba(6, 182, 212, 0.15);
-    transform: rotate(20deg);
-}
-
 @media (max-width: 480px) {
-    .fixed-theme-toggle { right: 12px; top: 10px; padding: 0.25rem 0.5rem; }
+    .theme-toggle { padding: 0.25rem 0.4rem; }
 }
 
 .top-nav a:hover,
@@ -443,16 +420,24 @@ html {
 }
 
 .theme-toggle {
-    background: transparent;
-    border: 1px solid transparent;
+    background: var(--card);
+    border: 1px solid var(--border);
     color: var(--muted);
     font-size: 1rem;
-    padding: 0.25rem 0.45rem;
-    border-radius: 6px;
+    padding: 0.35rem 0.55rem;
+    border-radius: 8px;
     cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    transition: all 0.3s ease;
+    flex-shrink: 0;
 }
 
-.theme-toggle:hover { color: var(--text); }
+.theme-toggle:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+    box-shadow: 0 4px 14px rgba(6, 182, 212, 0.2);
+    transform: rotate(20deg);
+}
 
 .icon {
     display: inline-block;
@@ -461,6 +446,12 @@ html {
     vertical-align: middle;
     margin-right: 8px;
     color: var(--text);
+    filter: invert(1) brightness(1.8);
+}
+
+.light-theme .icon {
+    filter: none;
+    opacity: 0.6;
 }
 
 .date-icon {
@@ -677,7 +668,7 @@ section:nth-child(5) { animation-delay: 0.4s; }
 }
 
 .fab, .fas, .far, .fal, .fa {
-    color: var(--muted);
+    color: var(--text);
     transition: color 120ms ease;
 }
 
@@ -787,7 +778,8 @@ section:nth-child(5) { animation-delay: 0.4s; }
     color: var(--accent);
 }
 
-.skill-group h4 i { color: var(--muted); }
+.skill-group h4 i { color: var(--accent); }
+.light-theme .skill-group h4 i { color: var(--muted); }
 
 .skill-group > * {
     position: relative;
