@@ -6,7 +6,7 @@
     
     
     const savedTheme = localStorage.getItem('site-theme');
-    if (savedTheme === 'light') {
+    if (savedTheme === null || savedTheme === 'light') {
         body.classList.add('light-theme');
     }
 

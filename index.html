@@ -40,7 +40,7 @@
                 <a href="#contact">Contact</a>
             </nav>
             <div class="header-right">
-                <button id="theme-toggle" class="theme-toggle" aria-label="Switch to light mode" aria-pressed="false">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Switch to dark mode" aria-pressed="true">
                     <span class="toggle-track">
                         <span class="toggle-thumb"></span>
                         <i class="fas fa-moon toggle-icon toggle-icon-moon"></i>
@@ -225,7 +225,7 @@
                         <span>AWS</span>
                         <span>BLIP</span>
                         <span>FastAPI</span>
-                        <span>LangChain</span>
+                        <span>LangGraph</span>
                         <span>LiteLLM</span>
                         <span>OpenAI</span>
                         <span>CLIP</span>
@@ -288,6 +288,7 @@
                     <button class="exp-tab active" role="tab" data-exp="0" aria-selected="true">Northwestern Medicine</button>
                     <button class="exp-tab" role="tab" data-exp="1" aria-selected="false">MyCartsOnline</button>
                     <button class="exp-tab" role="tab" data-exp="2" aria-selected="false">Blue Lambda Tech</button>
+                    <button class="exp-tab" role="tab" data-exp="5" aria-selected="false">Univ. of Kentucky</button>
                     <button class="exp-tab" role="tab" data-exp="3" aria-selected="false">Fiverr</button>
                     <button class="exp-tab" role="tab" data-exp="4" aria-selected="false">Gidi Mobile</button>
                 </div>
@@ -296,64 +297,75 @@
                         <h3>Machine Learning Engineer <span class="exp-at">@ Northwestern Medicine</span></h3>
                         <p class="exp-meta"><i class="fas fa-map-marker-alt"></i> Chicago, IL &nbsp;·&nbsp; <i class="fas fa-calendar-alt"></i> December 2024 – Present</p>
                         <ul class="exp-bullets">
-                            <li>Deployed production ML models on Databricks and AWS SageMaker with end-to-end MLOps pipelines.</li>
-                            <li>Built LLMOps workflows integrating LLMs with internal clinical data using LangChain and RAG.</li>
-                            <li>Engineered PySpark data pipelines processing millions of patient records with HIPAA compliance.</li>
-                            <li>Managed model inference serving via Triton Inference Server with Kubernetes orchestration.</li>
-                            <li>Implemented CI/CD pipelines with GitHub Actions and Docker for reproducible model deployments.</li>
+                            <li>Architected and led the end-to-end deployment of a high-throughput incident classification system (6,500+ daily reports), containerizing a fine-tuned Mixtral 7x8B model via Triton Inference Server on Azure VMSS, eliminating over 90% of the manual review workload.</li>
+                            <li>Designed and led the deployment of an event-based radiology reports classification system, enabling faster prioritization of urgent cases and mitigating potential delays and legal risks in patient care.</li>
+                            <li>Engineered the scalable data orchestration layer on Databricks (PySpark/SQL), automating secure ingestion and HIPAA-compliant storage of patient data, enabling real-time model feedback loops and auditability.</li>
+                            <li>Collaborated with a team of data scientists to optimize feature engineering pipelines, implementing parallel PySpark workflows that slashed feature generation latency by 92% and directly enabled faster model training and real-time inference.</li>
                         </ul>
                         <div class="item-tags">
-                            <span>Databricks</span><span>Docker</span><span>LLMOps</span><span>MLflow</span><span>MLOps</span><span>PySpark</span><span>PyTorch</span><span>Triton</span>
+                            <span>Databricks</span><span>Docker</span><span>LLMOps</span><span>MLflow</span><span>MLOps</span><span>PySpark</span><span>Kubernetes</span><span>Terraform</span><span>Azure DevOps</span>
                         </div>
                     </div>
                     <div class="exp-panel" data-exp="1">
                         <h3>Python Developer / AI Engineer <span class="exp-at">@ MyCartsOnline</span></h3>
                         <p class="exp-meta"><i class="fas fa-map-marker-alt"></i> Lagos, Nigeria (Contract) &nbsp;·&nbsp; <i class="fas fa-calendar-alt"></i> October 2025 – February 2026</p>
                         <ul class="exp-bullets">
-                            <li>Built a multimodal search system using OpenCLIP and BLIP for image-text product retrieval.</li>
-                            <li>Designed a RAG pipeline with Qdrant vector database for intelligent product Q&amp;A.</li>
-                            <li>Orchestrated ETL workflows with Apache Airflow to process and embed e-commerce catalogs at scale.</li>
-                            <li>Exposed AI capabilities via FastAPI endpoints with MLflow experiment tracking.</li>
-                            <li>Integrated Model Context Protocol (MCP) for structured LLM tool use.</li>
+                            <li>Designed and deployed a multimodal search platform combining BLIP-based auto-captioning with OpenCLIP (768D) embeddings to enable high-precision text-to-image and image-to-image retrieval from a product catalog.</li>
+                            <li>Implemented a RAG layer backed by Qdrant, improving semantic matching and boosting search precision by 40% over the baseline ChromaDB implementation through optimized vector indexing and hybrid retrieval strategies.</li>
+                            <li>Engineered a high-throughput Airflow data ingestion pipeline that automated real-time catalog synchronization for 10K+ products at 60 items/sec.</li>
+                            <li>Built a Model Context Protocol (MCP) server exposing inventory, product, and vendor search capabilities, enabling multi-agent systems to perform real-time lookups, supplier matching, and product discovery through a unified tool layer.</li>
                         </ul>
                         <div class="item-tags">
-                            <span>Python</span><span>OpenCLIP</span><span>BLIP</span><span>RAG</span><span>Qdrant</span><span>Airflow</span><span>FastAPI</span><span>MLflow</span>
+                            <span>LangChain</span><span>OpenCLIP</span><span>BLIP</span><span>RAG</span><span>Qdrant</span><span>Airflow</span><span>FastAPI</span><span>MLflow</span><span>Github Actions</span><span>Terraform</span>
                         </div>
                     </div>
                     <div class="exp-panel" data-exp="2">
                         <h3>Data Scientist <span class="exp-at">@ Blue Lambda Technologies</span></h3>
                         <p class="exp-meta"><i class="fas fa-map-marker-alt"></i> Atlanta, GA &nbsp;·&nbsp; <i class="fas fa-calendar-alt"></i> May 2023 – November 2024</p>
                         <ul class="exp-bullets">
-                            <li>Developed end-to-end ML pipelines for classification and regression across cloud platforms.</li>
-                            <li>Built and deployed RESTful API services to serve ML model predictions in production.</li>
-                            <li>Designed ETL/ELT pipelines integrating multiple data sources into cloud data warehouses.</li>
-                            <li>Applied feature engineering and model selection strategies to improve prediction accuracy.</li>
-                            <li>Implemented CI/CD for ML models using Docker and cloud-native deployment tooling.</li>
+                            <li>Architected and scaled end-to-end ML systems across three distinct domains (real estate, retail, finance), delivering PyTorch, XGBoost, and Scikit-Learn models to production with 95%+ uptime via AWS SageMaker for scalable batch inference and automated retraining.</li>
+                            <li>Collaborated on the development and deployment of an internal RAG platform using LangChain and Qdrant with Gemma 3.4B, resolving up to 7,000 weekly employee queries and reducing support ticket volume by 42% with 88% first-pass accuracy.</li>
+                            <li>Owned the data engineering backbone for 15+ concurrent models; built and maintained robust ETL pipelines using PySpark on Databricks/AWS EMR, strictly enforcing data lineage and quality gates to ensure production-grade, validated datasets.</li>
+                            <li>Instituted proactive MLOps monitoring using Arize and MLflow to detect data and concept drift; integrated auto-alerts and rollback protocols, sustaining &lt;5% metrics degradation across models over 18-month lifecycles.</li>
                         </ul>
                         <div class="item-tags">
-                            <span>Python</span><span>Machine Learning</span><span>Docker</span><span>ETL/ELT</span><span>SQL</span><span>Cloud Computing</span>
+                            <span>Python</span><span>Machine Learning</span><span>Docker</span><span>ETL/ELT</span><span>SQL</span><span>FastAPI</span><span>MLflow</span><span>Github Actions</span><span>Terraform</span>
+                        </div>
+                    </div>
+                    <div class="exp-panel" data-exp="5">
+                        <h3>Graduate Research Fellow <span class="exp-at">@ University of Kentucky</span></h3>
+                        <p class="exp-meta"><i class="fas fa-map-marker-alt"></i> Lexington, Kentucky &nbsp;·&nbsp; <i class="fas fa-calendar-alt"></i> January 2021 – May 2023</p>
+                        <ul class="exp-bullets">
+                            <li>Implemented optimization software (AIMS, R, and Python) and prescriptive analytics on resource allocation problems for bourbon manufacturing firms, culminating in published research and improving operational efficiency by 22%.</li>
+                            <li>Conducted rigorous statistical modeling for academic research papers, utilizing R and Python to validate complex datasets and ensure 95% confidence intervals of predictions.</li>
+                            <li>Authored research findings based on predictive modeling techniques covering market trends for industrial hemp firms.</li>
+                            <li>Developed strong foundations in quantitative methods, econometric analysis, and data-driven decision making directly applied to real-world agricultural economics datasets.</li>
+                        </ul>
+                        <div class="item-tags">
+                            <span>Python</span><span>R</span><span>Statistical Modeling</span><span>Optimization</span><span>Econometrics</span><span>Predictive Analytics</span>
                         </div>
                     </div>
                     <div class="exp-panel" data-exp="3">
                         <h3>Data Scientist <span class="exp-at">@ Fiverr</span></h3>
                         <p class="exp-meta"><i class="fas fa-map-marker-alt"></i> Lagos, Nigeria (Remote) &nbsp;·&nbsp; <i class="fas fa-calendar-alt"></i> January 2019 – November 2020</p>
                         <ul class="exp-bullets">
-                            <li>Delivered freelance data science projects for clients across healthcare, finance, and e-commerce.</li>
-                            <li>Built gradient boosting models using XGBoost with SHAP-based model explainability.</li>
-                            <li>Processed large datasets with PySpark and Scikit-Learn for feature engineering tasks.</li>
-                            <li>Provided cloud-based analytics solutions using SQL and Python scripting.</li>
+                            <li>Delivered custom ML solutions (Scikit-learn, XGBoost) for classification and regression across diverse client portfolios, achieving 15% average R² uplift and 22% precision gain by directly aligning model metrics to business-critical KPIs.</li>
+                            <li>Architected a real-time incremental data ingestion system using PySpark on AWS EMR, processing over 1.5M rows per run with sub-minute latency, reducing data-to-model latency by 87% and enabling live predictive scoring.</li>
+                            <li>Refactored legacy Jupyter notebooks into modular, PEP8-compliant packages; instituted comprehensive pytest/unittest suites (unit/integration/E2E), achieving 99% test coverage and guaranteeing audit-ready client handoffs.</li>
+                            <li>Drove model governance and transparency by integrating SHAP values and model cards directly into production APIs, empowering clients to trust and act on predictions with verifiable confidence.</li>
                         </ul>
                         <div class="item-tags">
-                            <span>Python</span><span>XGBoost</span><span>SHAP</span><span>PySpark</span><span>Scikit-Learn</span><span>SQL</span>
+                            <span>Python</span><span>XGBoost</span><span>SHAP</span><span>PySpark</span><span>Scikit-Learn</span><span>SQL</span><span>Pandas</span>
                         </div>
                     </div>
                     <div class="exp-panel" data-exp="4">
                         <h3>Content &amp; Learning Intern <span class="exp-at">@ Gidi Mobile</span></h3>
                         <p class="exp-meta"><i class="fas fa-map-marker-alt"></i> Victoria Island, Lagos, Nigeria &nbsp;·&nbsp; <i class="fas fa-calendar-alt"></i> January 2018 – December 2018</p>
                         <ul class="exp-bullets">
-                            <li>Developed web-based learning content for a mobile-first educational platform.</li>
-                            <li>Conducted research and produced educational materials aligned with curriculum standards.</li>
-                            <li>Collaborated with cross-functional teams on education policy and content strategy.</li>
+                            <li>Optimized mobile learning content for a WAEC prep application serving 10,000+ students, ensuring 100% alignment with national education policy and quality standards.</li>
+                            <li>Leveraged user feedback analysis and research to drive a 15% improvement in content engagement, providing data-backed insights for iterative platform enhancements.</li>
+                            <li>Streamlined content delivery workflows and coordinated large-scale uploads to support organizational strategies for expanding educational access.</li>
+                            <li>Coordinated cross-functional workflows between the research and technical teams to streamline the deployment of high-priority exam prep features.</li>
                         </ul>
                         <div class="item-tags">
                             <span>Web Content</span><span>Content Research</span><span>Education Policy</span>
@@ -376,9 +388,9 @@
                         <h3>Master of Science <span class="exp-at">@ University of Kentucky</span></h3>
                         <p class="exp-meta"><i class="fas fa-map-marker-alt"></i> Lexington, Kentucky &nbsp;·&nbsp; <i class="fas fa-calendar-alt"></i> 2023</p>
                         <ul class="exp-bullets">
-                            <li>Specialized in Agricultural Economics with a focus on quantitative methods and data analysis.</li>
-                            <li>Applied econometric modeling and statistical analysis to real-world economic datasets.</li>
-                            <li>Developed strong foundations in research methodology, optimization, programming, and data-driven decision making.</li>
+                            <li>Specialized in Hemp Economics with a focus on production optimization and price analysis.</li>
+                            <li>Applied quantitative methods, econometric modeling and statistical analysis to real-world economic datasets in international trade and hemp industries.</li>
+                            <li>Developed strong foundations in research methodology, optimization (linear programming), and data-driven decision making.</li>
                         </ul>
                         <div class="item-tags">
                             <span>Microeconomics</span><span>Macroeconomics</span><span>Econometrics</span><span>Statistics</span><span>Quantitative Research</span>
@@ -388,8 +400,9 @@
                         <h3>Bachelor of Science <span class="exp-at">@ University of Benin</span></h3>
                         <p class="exp-meta"><i class="fas fa-map-marker-alt"></i> Benin-City, Nigeria &nbsp;·&nbsp; <i class="fas fa-calendar-alt"></i> 2017</p>
                         <ul class="exp-bullets">
-                            <li>Studied microeconomics, macroeconomics, and quantitative methods applied to agricultural systems.</li>
-                            <li>Completed coursework in statistics, operations research, and project planning.</li>
+                            <li>Specialized in Production Economics with a focus on technical and operational efficiency.</li>
+                            <li>Studied microeconomics, macroeconomics, and quantitative methods applied to production systems.</li>
+                            <li>Completed coursework in macroeconomics, microeconomics, statistics, and project planning.</li>
                         </ul>
                         <div class="item-tags">
                             <span>Macroeconomics</span><span>Microeconomics</span><span>Statistics</span><span>Predictive Analytics</span><span>Regression Analysis</span>
@@ -404,10 +417,10 @@
         <section id="contact" class="cta-banner reveal">
             <div class="cta-banner-inner">
                 <h2 class="cta-title">Have a problem?<br>Let's solve it.</h2>
-                <p class="cta-sub">Open to new opportunities, collaborations, and interesting AI and ML challenges.</p>
+                <p class="cta-sub">Always open to new opportunities, collaborations, and interesting challenges in artificial intelligence and machine learning.</p>
                 <div class="cta-actions">
-                    <a href="mailto:abraham0ajibade@gmail.com" class="btn-primary">GET IN TOUCH</a>
-                    <a href="documents/Abraham Ajibade Resume 032026.pdf" target="_blank" class="btn-secondary">VIEW RESUME</a>
+                    <a href="mailto:abraham0ajibade@gmail.com" class="btn-primary">Reach Out</a>
+                    <a href="documents/Abraham Ajibade Resume 032026.pdf" target="_blank" class="btn-secondary">View Resume</a>
                 </div>
             </div>
         </section>
