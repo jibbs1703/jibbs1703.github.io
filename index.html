@@ -26,14 +26,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <div id="cursor-glow" aria-hidden="true"></div>
     <div class="scroll-progress-bar" id="scroll-progress" aria-hidden="true"></div>
     <div class="grain-overlay" aria-hidden="true"></div>
     <div class="container">
         <header>
-            <div class="header-left">
-                <a href="#hero" class="header-name">Abraham Ajibade</a>
-            </div>
             <button id="menu-toggle" class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
             <nav class="top-nav" aria-label="Main navigation">
                 <a href="#about">About</a>
@@ -41,48 +37,83 @@
                 <a href="#projects">Projects</a>
                 <a href="#experience">Experience</a>
                 <a href="#education">Education</a>
-                <a href="documents/Abraham Ajibade Resume 032026.pdf" target="_blank" class="resume-link">Resume</a>
+                <a href="#contact">Contact</a>
             </nav>
             <div class="header-right">
-                <a href="https://github.com/jibbs1703" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/abraham-o-ajibade" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="mailto:abraham0ajibade@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Switch to light mode" aria-pressed="false">
+                    <span class="toggle-track">
+                        <span class="toggle-thumb"></span>
+                        <i class="fas fa-moon toggle-icon toggle-icon-moon"></i>
+                        <i class="fas fa-sun toggle-icon toggle-icon-sun"></i>
+                    </span>
+                </button>
             </div>
         </header>
 
         <section id="hero">
             <div class="hero-bg"></div>
             <div class="hero-content">
-                <p class="hero-greeting">Hi, I'm</p>
+                <p class="hero-greeting">Hello, I'm</p>
                 <h1 class="hero-name">Abraham Ajibade</h1>
                 <div class="hero-roles">
                     <span><i class="fas fa-robot"></i> AI Engineer</span>
                     <span><i class="fas fa-brain"></i> ML Engineer</span>
                     <span><i class="fas fa-database"></i> Data Engineer</span>
                 </div>
-                <p class="hero-typewriter">I build <span id="hero-type"></span><span class="type-cursor" aria-hidden="true">|</span></p>
+                <div class="hero-contact">
+                    <a href="https://github.com/jibbs1703" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/abraham-o-ajibade" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:abraham0ajibade@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
             </div>
         </section>
 
         <section id="about" class="reveal">
-            <h2>About</h2>
-            <div class="about-content">
-                <div class="about-photo-container">
-                    <img src="documents/Abraham Ajibade Photo.jpeg" alt="Abraham Ajibade — AI/ML Engineer" class="about-photo" loading="lazy" width="280" height="280">
-                </div>
-                <div class="about-text">
-                    <p>I design and deploy production-ready Machine Learning (ML) systems, integrate large language models (LLMs), and build reliable data pipelines for scalable machine learning workflows.</p>
-
+            <h2>About Me</h2>
+            <div class="about-cards">
+                <div class="about-card">
+                    <div class="about-card-icon"><i class="fas fa-user-astronaut"></i></div>
+                    <h3>Who I Am</h3>
+                    <p>I design and deploy production-ready ML systems, integrate large language models (LLMs), and build reliable data pipelines for scalable machine learning workflows.</p>
                     <div class="about-stats">
                         <div class="stat-item">
                             <span class="stat-number" data-target="7" data-suffix="+">7+</span>
-                            <span class="stat-label">Years Experience</span>
+                            <span class="stat-label">Years Exp.</span>
                         </div>
                         <div class="stat-item">
                             <span class="stat-number" data-target="5">5</span>
                             <span class="stat-label">Roles Held</span>
                         </div>
+                    </div>
+                </div>
+                <div class="about-card">
+                    <div class="about-card-icon"><i class="fas fa-star"></i></div>
+                    <h3>Core Values</h3>
+                    <div class="interest-tags">
+                        <span><i class="fas fa-users"></i> Teamwork</span>
+                        <span><i class="fas fa-lightbulb"></i> Problem Solving</span>
+                        <span><i class="fas fa-comments"></i> Communication</span>
+                        <span><i class="fas fa-sync-alt"></i> Adaptability</span>
+                        <span><i class="fas fa-search"></i> Curiosity</span>
+                        <span><i class="fas fa-check-circle"></i> Ownership</span>
+                        <span><i class="fas fa-eye"></i> Attention to Detail</span>
+                        <span><i class="fas fa-infinity"></i> Continuous Learning</span>
+                    </div>
+                </div>
+                <div class="about-card">
+                    <div class="about-card-icon"><i class="fas fa-heart"></i></div>
+                    <h3>Beyond Work</h3>
+                    <div class="interest-tags">
+                        <span><i class="fas fa-home"></i> Family</span>
+                        <span><i class="fas fa-music"></i> Music</span>
+                        <span><i class="fas fa-book"></i> Reading</span>
+                        <span><i class="fas fa-tv"></i> Anime</span>
+                        <span><i class="fas fa-camera"></i> Sightseeing</span>
+                        <span><i class="fas fa-hiking"></i> Hiking</span>
+                        <span><i class="fas fa-futbol"></i> Soccer</span>
+                        <span><i class="fas fa-football-ball"></i> Football</span>
+                        <span><i class="fas fa-table-tennis"></i> Pickleball</span>
+                        <span><i class="fas fa-tools"></i> DIY</span>
                     </div>
                 </div>
             </div>
@@ -185,7 +216,8 @@
         <section id="projects" class="reveal">
             <h2>Projects</h2>
             <div class="projects-grid">
-                <div class="project-card">
+                <div class="project-card featured-card">
+                    <span class="featured-badge">FEATURED PROJECT</span>
                     <h3>Retail Chat Agent Backend</h3>
                     <p>Multimodal AI chat agent that understands both text and images to unlock smarter product discovery. Powered by CLIP, BLIP, and vector embeddings—served blazingly fast on AWS with FastAPI for instantly relevant results.</p>
 
@@ -203,7 +235,8 @@
                     <a href="https://github.com/jibbs1703/Retail-Chat-Agent-Backend" target="_blank" class="project-link"><i class="fab fa-github"></i> View on GitHub</a>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card featured-card">
+                    <span class="featured-badge">FEATURED PROJECT</span>
                     <h3>Retail Chat Agent ETL</h3>
                     <p>ETL powerhouse that transforms raw e-commerce catalogs into intelligent, searchable vectors—orchestrated by Apache Airflow at scale.</p>
 
@@ -248,131 +281,119 @@
         </section>
 
         <section id="experience" class="reveal">
-            <h2>Professional Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Machine Learning Engineer</h3>
-                        <p class="item-company"><img src="assets/icons/briefcase.svg" alt="Company" class="icon">Northwestern Medicine</p>
-                        <p class="item-location"><img src="assets/icons/location.svg" alt="Location" class="icon"> Chicago, IL</p>
-                        <div class="item-tags">
-                            <span>Cloud Computing</span>
-                            <span>Continuous Integration/Continuous Deployment</span>
-                            <span>Data Engineering</span>
-                            <span>Databricks</span>
-                            <span>Docker</span>
-                            <span>LLMOps</span>
-                            <span>Machine Learning</span>
-                            <span>MLflow</span>
-                            <span>MLOps</span>
-                            <span>Model Deployment</span>
-                            <span>Model Monitoring</span>
-                            <span>PySpark</span>
-                            <span>PyTorch</span>
-                            <span>Triton Inference Server</span>
-                            <span>Version Control</span>
-                        </div>
-                        <span class="timeline-date"><img src="assets/icons/calendar.svg" alt="Date" class="icon date-icon">December 2024 - Present</span>
-                    </div>
+            <p class="section-label">Where I've worked</p>
+            <h2>Experience</h2>
+            <div class="exp-layout">
+                <div class="exp-tabs" role="tablist">
+                    <button class="exp-tab active" role="tab" data-exp="0" aria-selected="true">Northwestern Medicine</button>
+                    <button class="exp-tab" role="tab" data-exp="1" aria-selected="false">MyCartsOnline</button>
+                    <button class="exp-tab" role="tab" data-exp="2" aria-selected="false">Blue Lambda Tech</button>
+                    <button class="exp-tab" role="tab" data-exp="3" aria-selected="false">Fiverr</button>
+                    <button class="exp-tab" role="tab" data-exp="4" aria-selected="false">Gidi Mobile</button>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Python Developer | AI Engineer</h3>
-                        <p class="item-company"><img src="assets/icons/briefcase.svg" alt="Company" class="icon">MyCartsOnline</p>
-                        <p class="item-location"><img src="assets/icons/location.svg" alt="Location" class="icon"> Lagos, Nigeria (Contract)</p>
+                <div class="exp-panels">
+                    <div class="exp-panel active" data-exp="0">
+                        <h3>Machine Learning Engineer <span class="exp-at">@ Northwestern Medicine</span></h3>
+                        <p class="exp-meta"><i class="fas fa-map-marker-alt"></i> Chicago, IL &nbsp;·&nbsp; <i class="fas fa-calendar-alt"></i> December 2024 – Present</p>
+                        <ul class="exp-bullets">
+                            <li>Deployed production ML models on Databricks and AWS SageMaker with end-to-end MLOps pipelines.</li>
+                            <li>Built LLMOps workflows integrating LLMs with internal clinical data using LangChain and RAG.</li>
+                            <li>Engineered PySpark data pipelines processing millions of patient records with HIPAA compliance.</li>
+                            <li>Managed model inference serving via Triton Inference Server with Kubernetes orchestration.</li>
+                            <li>Implemented CI/CD pipelines with GitHub Actions and Docker for reproducible model deployments.</li>
+                        </ul>
                         <div class="item-tags">
-                            <span>Python</span>
-                            <span>Multimodal Search</span>
-                            <span>OpenCLIP</span>
-                            <span>BLIP</span>
-                            <span>Retrieval-Augmented Generation</span>
-                            <span>Vector Databases</span>
-                            <span>Qdrant</span>
-                            <span>Apache Airflow</span>
-                            <span>Model Context Protocol</span>
-                            <span>FastAPI</span>
-                            <span>MLflow</span>
-                            <span>Machine Learning</span>
+                            <span>Databricks</span><span>Docker</span><span>LLMOps</span><span>MLflow</span><span>MLOps</span><span>PySpark</span><span>PyTorch</span><span>Triton</span>
                         </div>
-                        <span class="timeline-date"><img src="assets/icons/calendar.svg" alt="Date" class="icon date-icon">October 2025 - February 2026</span>
                     </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Data Scientist</h3>
-                        <p class="item-company"><img src="assets/icons/briefcase.svg" alt="Company" class="icon">Blue Lambda Technologies</p>
-                        <p class="item-location"><img src="assets/icons/location.svg" alt="Location" class="icon"> Atlanta, GA</p>
+                    <div class="exp-panel" data-exp="1">
+                        <h3>Python Developer / AI Engineer <span class="exp-at">@ MyCartsOnline</span></h3>
+                        <p class="exp-meta"><i class="fas fa-map-marker-alt"></i> Lagos, Nigeria (Contract) &nbsp;·&nbsp; <i class="fas fa-calendar-alt"></i> October 2025 – February 2026</p>
+                        <ul class="exp-bullets">
+                            <li>Built a multimodal search system using OpenCLIP and BLIP for image-text product retrieval.</li>
+                            <li>Designed a RAG pipeline with Qdrant vector database for intelligent product Q&amp;A.</li>
+                            <li>Orchestrated ETL workflows with Apache Airflow to process and embed e-commerce catalogs at scale.</li>
+                            <li>Exposed AI capabilities via FastAPI endpoints with MLflow experiment tracking.</li>
+                            <li>Integrated Model Context Protocol (MCP) for structured LLM tool use.</li>
+                        </ul>
                         <div class="item-tags">
-                            <span>API Development</span>
-                            <span>Cloud Computing</span>
-                            <span>Continuous Integration/Continuous Deployment</span>
-                            <span>Data Engineering</span>
-                            <span>Data Science</span>
-                            <span>Docker</span>
-                            <span>ETL/ELT</span>
-                            <span>Feature Engineering</span>
-                            <span>Machine Learning</span>
-                            <span>Model Deployment</span>
-                            <span>Python</span>
-                            <span>SQL</span>
+                            <span>Python</span><span>OpenCLIP</span><span>BLIP</span><span>RAG</span><span>Qdrant</span><span>Airflow</span><span>FastAPI</span><span>MLflow</span>
                         </div>
-                        <span class="timeline-date"><img src="assets/icons/calendar.svg" alt="Date" class="icon date-icon">May 2023 - November 2024</span>
                     </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Data Scientist</h3>
-                        <p class="item-company"><img src="assets/icons/briefcase.svg" alt="Company" class="icon">Fiverr</p>
-                        <p class="item-location"><img src="assets/icons/location.svg" alt="Location" class="icon"> Lagos, Nigeria (Remote)</p>
+                    <div class="exp-panel" data-exp="2">
+                        <h3>Data Scientist <span class="exp-at">@ Blue Lambda Technologies</span></h3>
+                        <p class="exp-meta"><i class="fas fa-map-marker-alt"></i> Atlanta, GA &nbsp;·&nbsp; <i class="fas fa-calendar-alt"></i> May 2023 – November 2024</p>
+                        <ul class="exp-bullets">
+                            <li>Developed end-to-end ML pipelines for classification and regression across cloud platforms.</li>
+                            <li>Built and deployed RESTful API services to serve ML model predictions in production.</li>
+                            <li>Designed ETL/ELT pipelines integrating multiple data sources into cloud data warehouses.</li>
+                            <li>Applied feature engineering and model selection strategies to improve prediction accuracy.</li>
+                            <li>Implemented CI/CD for ML models using Docker and cloud-native deployment tooling.</li>
+                        </ul>
                         <div class="item-tags">
-                            <span>Cloud Computing</span>
-                            <span>Data Science</span>
-                            <span>PySpark</span>
-                            <span>Python</span>
-                            <span>Scikit-Learn</span>
-                            <span>SHAP</span>
-                            <span>XGBoost</span>
-                            <span>SQL</span>
+                            <span>Python</span><span>Machine Learning</span><span>Docker</span><span>ETL/ELT</span><span>SQL</span><span>Cloud Computing</span>
                         </div>
-                        <span class="timeline-date"><img src="assets/icons/calendar.svg" alt="Date" class="icon date-icon">January 2019 - November 2020</span>
                     </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Content and Learning Intern</h3>
-                        <p class="item-company"><img src="assets/icons/briefcase.svg" alt="Company" class="icon">Gidi Mobile</p>
-                        <p class="item-location"><img src="assets/icons/location.svg" alt="Location" class="icon"> Victoria Island, Lagos, Nigeria</p>
+                    <div class="exp-panel" data-exp="3">
+                        <h3>Data Scientist <span class="exp-at">@ Fiverr</span></h3>
+                        <p class="exp-meta"><i class="fas fa-map-marker-alt"></i> Lagos, Nigeria (Remote) &nbsp;·&nbsp; <i class="fas fa-calendar-alt"></i> January 2019 – November 2020</p>
+                        <ul class="exp-bullets">
+                            <li>Delivered freelance data science projects for clients across healthcare, finance, and e-commerce.</li>
+                            <li>Built gradient boosting models using XGBoost with SHAP-based model explainability.</li>
+                            <li>Processed large datasets with PySpark and Scikit-Learn for feature engineering tasks.</li>
+                            <li>Provided cloud-based analytics solutions using SQL and Python scripting.</li>
+                        </ul>
                         <div class="item-tags">
-                            <span>Web Content Development</span>
-                            <span>Content Research</span>
-                            <span>Content Development</span>
-                            <span>Education Policy</span>
+                            <span>Python</span><span>XGBoost</span><span>SHAP</span><span>PySpark</span><span>Scikit-Learn</span><span>SQL</span>
                         </div>
-                        <span class="timeline-date"><img src="assets/icons/calendar.svg" alt="Date" class="icon date-icon">January 2018 - December 2018</span>
+                    </div>
+                    <div class="exp-panel" data-exp="4">
+                        <h3>Content &amp; Learning Intern <span class="exp-at">@ Gidi Mobile</span></h3>
+                        <p class="exp-meta"><i class="fas fa-map-marker-alt"></i> Victoria Island, Lagos, Nigeria &nbsp;·&nbsp; <i class="fas fa-calendar-alt"></i> January 2018 – December 2018</p>
+                        <ul class="exp-bullets">
+                            <li>Developed web-based learning content for a mobile-first educational platform.</li>
+                            <li>Conducted research and produced educational materials aligned with curriculum standards.</li>
+                            <li>Collaborated with cross-functional teams on education policy and content strategy.</li>
+                        </ul>
+                        <div class="item-tags">
+                            <span>Web Content</span><span>Content Research</span><span>Education Policy</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <section id="education" class="reveal">
+            <p class="section-label">Academic background</p>
             <h2>Education</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3><img src="assets/icons/education.svg" alt="Education" class="icon">Master of Science</h3>
-                        <p class="item-major">Agricultural Economics</p>
-                        <p class="item-university">University of Kentucky</p>
-                        <p class="item-location"><img src="assets/icons/location.svg" alt="Location" class="icon"> Lexington, Kentucky</p>
-                        <span class="timeline-date"><img src="assets/icons/calendar.svg" alt="Date" class="icon date-icon">2023</span>
-                    </div>
+            <div class="exp-layout">
+                <div class="exp-tabs" role="tablist">
+                    <button class="exp-tab active" role="tab" data-edu="0" aria-selected="true">University of Kentucky</button>
+                    <button class="exp-tab" role="tab" data-edu="1" aria-selected="false">University of Benin</button>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3><img src="assets/icons/education.svg" alt="Education" class="icon">Bachelor of Science</h3>
-                        <p class="item-major">Agricultural Economics</p>
-                        <p class="item-university">University of Benin</p>
-                        <p class="item-location"><img src="assets/icons/location.svg" alt="Location" class="icon"> Benin-City, Nigeria</p>
-                        <span class="timeline-date"><img src="assets/icons/calendar.svg" alt="Date" class="icon date-icon">2017</span>
+                <div class="exp-panels">
+                    <div class="exp-panel active" data-edu="0">
+                        <h3>Master of Science <span class="exp-at">@ University of Kentucky</span></h3>
+                        <p class="exp-meta"><i class="fas fa-map-marker-alt"></i> Lexington, Kentucky &nbsp;·&nbsp; <i class="fas fa-calendar-alt"></i> 2023</p>
+                        <ul class="exp-bullets">
+                            <li>Specialized in Agricultural Economics with a focus on quantitative methods and data analysis.</li>
+                            <li>Applied econometric modeling and statistical analysis to real-world economic datasets.</li>
+                            <li>Developed strong foundations in research methodology, optimization, programming, and data-driven decision making.</li>
+                        </ul>
+                        <div class="item-tags">
+                            <span>Microeconomics</span><span>Macroeconomics</span><span>Econometrics</span><span>Statistics</span><span>Quantitative Research</span>
+                        </div>
+                    </div>
+                    <div class="exp-panel" data-edu="1">
+                        <h3>Bachelor of Science <span class="exp-at">@ University of Benin</span></h3>
+                        <p class="exp-meta"><i class="fas fa-map-marker-alt"></i> Benin-City, Nigeria &nbsp;·&nbsp; <i class="fas fa-calendar-alt"></i> 2017</p>
+                        <ul class="exp-bullets">
+                            <li>Studied microeconomics, macroeconomics, and quantitative methods applied to agricultural systems.</li>
+                            <li>Completed coursework in statistics, operations research, and project planning.</li>
+                        </ul>
+                        <div class="item-tags">
+                            <span>Macroeconomics</span><span>Microeconomics</span><span>Statistics</span><span>Predictive Analytics</span><span>Regression Analysis</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -380,13 +401,54 @@
 
         
 
-        <footer>
-            <div class="footer-links">
-                <a href="https://github.com/jibbs1703" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/abraham-o-ajibade" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="mailto:abraham0ajibade@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        <section id="contact" class="cta-banner reveal">
+            <div class="cta-banner-inner">
+                <h2 class="cta-title">Have a problem?<br>Let's solve it.</h2>
+                <p class="cta-sub">Open to new opportunities, collaborations, and interesting AI and ML challenges.</p>
+                <div class="cta-actions">
+                    <a href="mailto:abraham0ajibade@gmail.com" class="btn-primary">GET IN TOUCH</a>
+                    <a href="documents/Abraham Ajibade Resume 032026.pdf" target="_blank" class="btn-secondary">VIEW RESUME</a>
+                </div>
             </div>
-            <p>© 2026 Abraham Ajibade. All Rights Reserved.</p>
+        </section>
+
+        <footer>
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <p class="footer-col-heading">Abraham Ajibade</p>
+                    <p class="footer-tagline">AI & ML Engineer passionate about building production-ready machine learning systems that drive real-world impact.</p>
+                    <div class="footer-socials">
+                        <a href="https://github.com/jibbs1703" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/abraham-o-ajibade" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:abraham0ajibade@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <p class="footer-col-heading">Quick Links</p>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <p class="footer-col-heading">Expertise</p>
+                    <ul>
+                        <li>Machine Learning Engineering</li>
+                        <li>LLM & GenAI Solutions</li>
+                        <li>MLOps & LLMOps</li>
+                        <li>Data Pipeline Engineering</li>
+                        <li>Cloud AI Infrastructure</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p><i class="fas fa-map-marker-alt"></i> Chicago, Illinois</p>
+                <p>© 2026 Abraham Ajibade. All Rights Reserved.</p>
+            </div>
         </footer>
     </div>
     <button id="back-to-top" class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
